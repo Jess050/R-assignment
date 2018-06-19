@@ -1,0 +1,49 @@
+date;site;low_tide;cleared_transect;non_cleared_transect;beach_cast_cleared;beach_cast_noncleared
+25/02/2018;Hout Bay east;6:03 AM;36;33;low;low
+25/02/2018;Muizenberg;6:03 AM;32;36;average;average
+25/02/2018;Fish Hoek;6:03 AM;33;34;low;low
+02/03/0208;Hout Bay west;9:52 AM;32;36;very low;low
+02/03/0208;Strandfontein beach;9:52 AM;30;36;very low;average
+02/03/0208;Fish Hoek;9:52 AM;38;35;very low;low
+14/03/2018;Hout Bay West;8:03 AM;45;38;zero;very low
+14/03/2018;Fish Hoek;8:03 AM;30;35;very low;very low
+14/03/2018;Muizenberg;8:03 AM;32;30;zero;average
+16/03/2018;Hout Bay West ;9:03 AM;37;35;very low;very low
+16/03/2018;Hout Bay East;9:03 AM;38;40;very low;very low
+16/03/2018;Fish Hoek;9:03 AM;33;40;very low;very low
+20/03/2018;Hout Bay east;11:07 AM;36;40;very low;low
+20/03/2018;Muizenberg;11:07 AM;32;38;very low;average
+20/03/2018;Fish Hoek;11:07 AM;36;38;zero;average
+23/03/2018;Hout Bay East;1:21 PM;36;42;low;low
+23/03/2018;Fish Hoek;1:21 PM;38;41;very low;low
+23/03/2018;Muizenberg;1:21 PM;47;48;low;average
+28/03/2018;Hout Bay East;7:43 AM;32;33;low;average
+28/03/2018;Hout Bay West ;7:43 AM;36;40;low;average
+28/03/2018;Fish Hoek;7:43 AM;33;36;very low;low
+30/03/2018;Fish Hoek;8:53 AM;33;35;very low;low
+30/03/2018;Hout Bay East;8:53 AM;34;38;average;average
+30/03/2018;Hout Bay West ;8:53 AM;36;33;low;average
+04/04/2018;Hout Bay East;11:45 AM;33;40;low;average
+04/04/2018;Fish Hoek;11:45 AM;35;36;low;very low
+04/04/2018;Muizenberg;11:45 AM;37;40;average;average
+06/04/2018;Hout Bay West ;12:45 PM;33;32;very low;low
+06/04/2018;Hout Bay East;12:45 PM;34;33;very low;low
+06/04/2018;Fish Hoek;12:45 PM;34;33;zero;low
+12/04/2018;Hout Bay West ;7:34 AM;33;34;average;average
+12/04/2018;Hout Bay East;7:34 AM;34;36;average;average
+12/04/2018;Muizenberg;7:34 AM;40;43;average;average
+13/04/2018;Fish Hoek;8:00 AM;28;25;above average;above average
+13/04/2018;Hout Bay West ;8:00 AM;33;32;average;average
+13/04/2018;Hout Bay East;8:00 AM;34;33;average;average
+17/04/2018;Hout Bay East;10:20 AM;37;42;average;average
+17/04/2018;Fish Hoek;10:20 AM;33;36;average;average
+17/04/2018;Muizenberg;10:20 AM;38;41;very low;average 
+20/04/2018;Hout Bay East;12:03 PM;38;40;average;average
+20/04/2018;Muizenberg;12:03 PM;45;39;average;average
+20/04/2018;Fish Hoek;12:03 PM;30;29;average;very low
+24/04/2018;Hout Bay East;6:05 AM;30;30;average;average
+24/04/2018;Hout Bay West ;6:05 AM;28;31;average;average
+24/04/2018;Fish Hoek;6:05 AM;29;28;average;average
+27/04/2018;Hout Bay East;8:03 AM;33;32;low;average
+27/04/2018;Hout Bay West ;8:03 AM;34;30;low;average
+27/04/2018;Fish Hoek;8:03 AM;28;30;above average;above average
