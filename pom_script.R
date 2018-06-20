@@ -68,9 +68,9 @@ ggplot(data = pom_data, aes(x = value)) +
 # pom_data_sub <- pom_data %>% 
 #  filter(variable == "pom")
 
-# ggplot(data = pom_data_sub, aes(x = variable, y = value, fill = site)) +
-#  geom_boxplot() +
-# labs(y = "Grams (g)", x = "POM content", title = "POM") 
+ggplot(data = pom_data1, aes(x = variable, y = value, fill = site)) +
+  geom_boxplot(outlier.shape = NA)+
+  coord_cartesian()
 
 # cleared sites
 pom_cleared <- pom_data %>% 
@@ -84,7 +84,7 @@ ggplot(data = pom_cleared, aes(x = variable, y = value, fill = site)) +
 pom_non_cleared <- pom_data %>% 
   filter(variable == "pom", area == "non_cleared")
 
-ggplot(data = pom_non_cleared, aes(x = variable, y = value, fill = site)) +
+ggplot(data = pom_non_cleared, aes(x = site, y = value, fill = area)) +
   geom_boxplot(notch = TRUE) +
   labs(y = "Grams (g)", x = "POM content", title = "Non-cleared sites")
 
