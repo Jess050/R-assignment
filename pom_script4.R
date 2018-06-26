@@ -205,19 +205,51 @@ plot(TukeyHSD(aov(pom ~ as.factor(area), data = pom_data4)))
 
 
 
+# dates  ------------------------------------------------------------------
+
+pom_mar <- subset(pom_data4, format.Date(pom_data4$date,"%m")=="03")
+pom_apr <- subset(pom_data4, format.Date(pom_data4$date,"%m")=="04")
+pom_feb <- subset(pom_data4, format.Date(pom_data4$date,"%m")=="02")
+
+windows()
+hist(pom_apr$pom,col='blue')
+
+par(new=T)
+hist(pom_mar$pom,col="green")
+par(new=T)
+
+
+pom_mar_apr <- rbind(pom_apr, pom_mar)
+
+
+t1 = t.test(pom_mar_apr$pom ~ format.Date(pom_mar_apr$date,"%m"),data = pom_mar_apr , var.equal=F)
+t1
+# Welch Two Sample t-test
+# data:  pom_mar_apr$pom by format.Date(pom_mar_apr$date, "%m")
+# t = -1.8417, df = 425.72, p-value = 0.06622
+# alternative hypothesis: true difference in means is not equal to 0
+# 95 percent confidence interval:
+#   -0.170906886  0.005560434
+# sample estimates:
+#   mean in group 03 mean in group 04 
+#      0.3019059        0.3845792 
+#POM content is significantly different between months 
 
 
 
 
 
 
+lubridate::month(pom_data4, label = TRUE)
 
 
-
-
-
-
-
+# boxplot for months 
+# notched boxplots
+# kruskal for site, months and area 
+# why is pom highger at cleared sites 
+#hb west n fish hoek have storm drains 
+# non- cleared areas - dunes
+#
 
 
 
