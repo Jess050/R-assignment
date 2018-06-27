@@ -12,18 +12,17 @@ library(lubridate)
 # load  data  -------------------------------------------------------------
 
 
-# pom_data <- read.csv2("pom_data_updated.csv", header = TRUE)
-# not working (excel format problematic)
+pom_data <- read.csv("updated.csv", sep = ";")
 
-pom_data <- read_delim("pom_data_updated.csv", 
-                        ";", escape_double = FALSE, trim_ws = TRUE)
+# pom_data <- read_delim("pom_data_updated.csv", 
+#                         ";", escape_double = FALSE, trim_ws = TRUE)
 
 
 # analysing data --------------------------------------------------------
 
 # quick visualisation 
 ggplot(pom_data, aes(x = pom)) +
-  geom_density()
+  geom_density(aes(group = site, colour = site, fill = site),alpha = 0.3)
 
 # test for normality 
 shapiro.test(pom_data$pom)
@@ -47,6 +46,16 @@ shapiro.test(pom_data$pom)
 # 2. is POM content higher in uncleared areas than in cleared areas?
 # 3. is POM content different over time?
 
+# summary -----------------------------------------------------------------
+
+sum_pom <-  pom_data %>% 
+  group_by(site) %>% 
+  summarise(mn_pom = mean(pom), 
+            med_pom = median(pom),
+            min_pom = min(pom),
+            max_pom = max(pom), 
+            sd_pom = sd(pom))
+
 # site  -------------------------------------------------------------------
 
 # pom content for each site, both cleared and non-cleared
@@ -55,7 +64,8 @@ ggplot(data = pom_data, aes(x = site, y = pom, fill = area)) +
   coord_cartesian( ylim = c(0, 1.2)) +
   labs(title = "POM content per site",
        x = "Site",
-       y = "POM (g)")
+       y = "POM (g)") +
+  theme_minimal()  
 
 # Kruskal-Wallis test
 kruskal.test(pom ~ as.factor(site), data = pom_data)
@@ -89,9 +99,9 @@ TukeyHSD(aov(pom ~ as.factor(site), data = pom_data))
 
 # incomplete ...
 # use anova for sites
-anova1 <- aov(pom~site,data= pom_data)
-
-summary(anova1)
+# anova1 <- aov(pom~site,data= pom_data)
+# 
+# summary(anova1)
 # Df Sum Sq Mean Sq F value Pr(>F)
 # site          4   0.66  0.1639   0.759  0.552
 # Residuals   476 102.77  0.2159   
@@ -130,7 +140,8 @@ ggplot(data = pom_data, aes(x = area, y = pom, fill = area)) +
   coord_cartesian(ylim = c(0, 1)) +
   labs(title = "Total POM content",
        x = "Area",
-       y = "POM (g)")
+       y = "POM (g)") +
+  theme_minimal()  
 
 #t-test
 t.test(pom ~ area, data = pom_data)
@@ -174,12 +185,14 @@ time <- pom_data[-c(21:30), ]
 
 # pom content per month
 ggplot(data = time, aes(x = month, y = pom, fill = area)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE)+
+  geom_boxplot(outlier.shape = NA, notch = TRUE) +
   coord_cartesian( ylim = c(0, 1.3)) +
   labs(title = "Monthly POM content",
        x = "Site",
-       y = "POM (g)")
+       y = "POM (g)") +
+  theme_minimal()  
   
+
 # Kruskal-Wallis
 kruskal.test(pom ~ as.factor(month), data = time)
 
@@ -203,3 +216,87 @@ TukeyHSD(aov(pom ~ as.factor(month), data = time))
 # Mar-Feb -0.06312854 -0.2807471 0.15449000 0.7740766
 
 
+# transect lengths  -------------------------------------------------------
+
+meta <- read.csv2("metadata.csv") 
+
+
+
+## Cleeared transects
+
+# quick visualisation 
+ggplot(meta, aes(x = cleared_transect)) +
+  geom_density(aes(group = site, colour = site, fill = site),alpha = 0.3)
+
+# test for normality 
+shapiro.test(meta$cleared_transect)
+
+# Shapiro-Wilk normality test
+# data:  pom_meta$cleared_transect
+# W = 0.91412, p-value = 0.001856
+# not normal 
+
+sum_cleared_trans <-  meta %>% 
+  group_by(site) %>% 
+  summarise(mn_cleared = mean(cleared_transect), 
+            med_cleared = median(cleared_transect),
+            min_cleared = min(cleared_transect),
+            max_cleared = max(cleared_transect), 
+            sd_cleared = sd(cleared_transect))
+
+
+# transect lengths for each site, cleared 
+ggplot(data = meta, aes(x = site, y = cleared_transect)) +
+  geom_boxplot(aes(colour = site), outlier.shape = NA, notch = TRUE)+
+  geom_point(data = sum_cleared_trans, size = 6, shape = 18,
+             aes(y = mn_cleared), colour = "goldenrod") +
+  labs(title = "cleared",
+       x = "Site",
+       y = "transect lengths (m)") +
+  theme_minimal()  
+
+# Kruskal-Wallis
+kruskal.test(cleared_transect ~ as.factor(site), data = meta)
+
+# Kruskal-Wallis rank sum test
+# data:  cleared_transect by as.factor(site)
+# Kruskal-Wallis chi-squared = 6.5546, df = 4, p-value = 0.1614
+
+## non_cleared transects
+
+# quick visualisation 
+ggplot(meta, aes(x = non_cleared_transect)) +
+  geom_density(aes(group = site, colour = site, fill = site),alpha = 0.3)
+
+# test for normality 
+shapiro.test(meta$non_cleared_transect)
+
+# Shapiro-Wilk normality test
+# data:  pom_meta$non_cleared_transect
+# W = 0.98281, p-value = 0.6987
+# normal 
+
+sum_non_cleared_trans <-  meta %>% 
+  group_by(site) %>% 
+  summarise(mn_non = mean(non_cleared_transect), 
+            med_non = median(non_cleared_transect),
+            min_non = min(non_cleared_transect),
+            max_non = max(non_cleared_transect), 
+            sd_non = sd(non_cleared_transect))
+
+
+# transect lengths for each site, non_cleared
+ggplot(data = meta, aes(x = site, y = non_cleared_transect)) +
+  geom_boxplot(aes(colour = site),outlier.shape = NA, notch = TRUE)+
+  geom_point(data = sum_cleared_trans, size = 6, shape = 18,
+             aes(y = mn_cleared), colour = "goldenrod") +
+  labs(title = "non_cleared",
+       x = "Site",
+       y = "transect lengths (m)") +
+  theme_minimal()  
+
+summary(aov(mn_non ~ as.factor(site), data = sum_non_cleared_trans))
+
+# notes  ------------------------------------------------------------------
+
+# tukey test specifies where the differences lie, whereas kruskal just states that there is a difference
