@@ -1,0 +1,467 @@
+---
+title: "Impacts of kelp removal on POM content on beaches around Cape Town"
+author: "Kholofelo Sethebe, Joshua Adrian and Jesse Smith"
+date: "29 June 2018"
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
+mainfont: Arial
+geometry: margin=1in
+fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+This review provides an overview of the importance of beach accumulations of macrophytes which consists mainly of large brown algae, commonly referred to as kelps, seagrasses and other organic beach-cast material on the ecology of sandy beach ecosystems. It describes the composition of these allochthonous subsidies and their abundance on the 5 beaches around the city of Cape Town in relation to cleared and non – cleared sites. The paper then analyses the significant difference in POM content between the cleared and the no-cleared sites using different statistical analysis in R which then answers the question of POM content being higher in uncleared areas than in cleared areas. The results acquired in this paper can be used to open new discussion platforms in relation to rationales and conflicts surrounding kelp removal from beaches along the Cape Peninsula by the Department of Agriculture, Forestry, and Fisheries (DAFF) and the Cape Town Municipality.
+
+*Keywords*: Macrophytes. Kelp wrack. Sandy beach ecosystem. POM. Decomposers. Beach clean-up.
+
+# Introduction 
+The idea of ''ecosystem'' for the most part infers a system with a high level of internal control and constraining. No biological system, however, is completely without interaction with, or impact from, adjacent natural surroundings or species assemblages (Orr et al. 2005). Sandy shorelines frame a dynamic interface between marine and terrestrial ecosystems, and a large number of studies focussing on the connectivity between various segments of a beach and their neighbouring coastal environments have been led over the recent years (Mellbrand et al. 2011). One of the principle linkages comprises of allochthonous contributions of organic material, which sandy beaches obtain in the form of beach-cast wrack, i.e. primarily macroalgae and higher plants/seagrasses (Rossi and Underwood 2002). This wrack material, transferred from surrounding ecosystems such as rocky shores or seagrass beds, may strand all through the whole intertidal range. Algal wrack deposits are documented on various kinds of beaches over the world, and with extremely variable values (i.e. sandy shorelines and estuarine shorelines: Gómez et al. 2013). These external contributions of detrital macroalgae can greatly impact ecological features and operation of the receiver ecosystems by providing food and living space, regularly boosting richness and biodiversity of primary and secondary consumers (e.g. Wilson and Wolkovich 2011). Impact of algal wrack is more important where an exceedingly productive coastal environment, (i.e. subtidal rocky shores) interfaces with and sends out materials to the moderately less productive exposed sedimentary shores, such as rocky or sandy beaches, regularly without aquatic macrophytes (Lastra 2014).
+
+The richness of stranded macrophytes on shorelines is extremely variable and relies upon the vicinity to rocky shores and reefs or to seagrass fields. Marsden (1991a) working on a sandy beach in New Zealand calculated an average monthly wet weight of organic material of 11.25 kg 5m-1 (SE mean = 3.78 kg) demonstrating a low organic input. On different events inputs can be very high. An approximation of 2179 kgm-1 yr-1 of kelp wrack was calculated for a beach on the western coast of South Africa (Stenton-Dozey and Griffiths 1983) a value very similar to that established for a nearby rocky shore, namely 1200–1800 kgm-1 yr-1 (Koop & Field 1980). On another South African shoreline close Port Elisabeth, the aggregate wrack input assessed was 2920 kgm-1 yr-1 (McLachlan and McGwynne 1986) though on beaches close Perth, western Australia 240 tdwkm-1 coastline yr-1 of segregated plants were processed through the sandy beach system (Hansen 1983).
+
+Together with other factors, accumulations of stranded macrophytes along shorelines have the significant role of inducing dune formation. Wracks are mainly significant on exposed shorelines where they balance out the foreshore by enhancing the organic and moisture contents, permitting pioneer plants to establish (Llewellyn and Shackley 1996). Moreover, Kelp is utilized as a dirt amendment in agriculture in numerous parts of the world (Chapman and Chapman 1980), and is an economical local resource in coastal agricultural zones. In the External Hebrides of northwest Scotland, mostly corrupted kelp has generally been spread on fields of fixed dune grassland known 'machair' (Angus 2001), to expand soil organic matter, bind soil particles and provide plant nutrients. In recent decades, however, the labour intensive collection and spreading of kelp is being partly substituted with NPK compost (Thorse et al 2010). 
+Float kelp (for the most part, Ecklonia maxima with some Laminaria pallida and small measures of other seaweeds) that appears on shorelines along the Cape Peninsula is routinely removed for both commercial and aesthetic reasons. Two separate administrative bodies manage this procedure which are; The Department of Agriculture, Forestry and Fisheries (DAFF) and the Cape Town Municipality (Yoshikawa 2013). DAFF Issues grants permitting rights holders to gather kelp for commercial reasons such as alginate production within specific concession areas, which is their way of monitoring the collection of beach-cast kelp along the entire South African coast. There are areas designated as Marine Protected Areas by South African National Parks within these concession regions, where collection of any material which includes kelp is prohibited. On the other hand, The Cape Town Municipality cleans the Cape Peninsula beaches by removing all kelps with the drive of enhancing beach aesthetics (Yoshikawa 2013). Since the deterioration of kelp on the surface of a beach shows an assortment of unsatisfactory conditions for beachgoers such as the scent of spoiling seaweed and kelp flies being present as well as other invertebrates, this beach-cast seaweed is therefore removed by workers employed by the Municipality with the sole purpose of making Cape Town’s beaches tourist-friendly. None of the float kelp gathered by the Municipality is utilized commercially, however is fairly discarded. Despite the fact that the two organisations work within their different limits and by their own methods, these two agencies are frequently in conflict with respect to how kelp collection should be managed on the Cape Peninsula (Yoshikawa 2013).
+
+One of a kind occurrence of kelp administration by the Cape Town Municipality is the situation of Clifton's 4th beach, where the gathered kelp is covered-up onsite as opposed to remove to landfills as it regularly seems to be. While waste from other beaches subject to kelp cleansing by the Municipality is taken to landfills, absence of a road adjacent to Clifton’s 4th beach keeps trucks from getting to the area (Yoshikawa 2013). Keeping in mind the end goal to discard the beach-cast kelp, therefore, the seaweed is being buried everyday along the top of the beach by workers. The areas and timing of these burials, however, are construct absolutely on practicality and the implications of this practice on both long-term aesthetics and the health and dynamics of the beach ecosystem are unknown. In spite of the fact that little is known about the implications of covering kelp in sandy shore surroundings, there is much information of the roles of beach-cast seaweed in sandy shore ecosystems, coastal decay of kelp, and the administration of kelp accumulation and use along the Cape Peninsula (Yoshikawa 2013). 
+
+Along the south-west shoreline of South Africa, kelp wrack is the essential source of energy for sandy shore ecosystems (Griffiths et al. 1983). The main types of kelps available in this area are Ecklonia maxima and Laminaria pallida, and it has been assessed that more than 2 metric tons of these kelps are deposited on each meter of beach every year (Griffiths et al. 1983). Beach-cast kelp has been observed to be imperative to coastal environments around the world as it supports intertidal herbivore and decomposer communities (Revell et al. 2011) contributes to primary production (Koop et al. 1982). It was additionally proposed that kelp wrack may assist in beach shaping; through a study of beaches in California, it was demonstrated that seaweed debris may help in steadying beaches against disintegration caused by elements such as wave exposure (Revell et al. 2011). On beaches in Ireland, this kelp wrack that amasses above the high water mark is vital to the improvement and support of dunes by facilitating the accumulation of sand (McKenna et al. 2000). This kelp also greatly impacts different biological communities, conveying with it the seeds of numerous seashore plants and providing nutrients and moisture to these environments (McKenna et al. 2000). Kelp collection in South Australia have also been revealed to play a role in dune formation by trapping sand (Kirkman and Kendrick 1997). But then what will happen if the Kelp is removed from the beaches?
+
+Extreme removal of kelp from beaches can have important implications for the integrity of beach and dune ecology. The CCT has set up a Beach Cleaning Practice which advises the operational administration and removal of kelp from Cape Town’s beaches. This arrangement aims to strike a delicate balance between leaving kelp on beaches due to the environmental and indirect social benefits, while limiting the negative social effects related with kelp, that being smell, flies and obstruction. Outside of kelp cleaning zones beach cast kelp will be left in its natural configuration along Cape Town’s beaches as opposed to physically placing kelp on dune systems. The regular distribution of kelp on beaches plays an important role in elevating beach profiles. Elevated beach profiles in turn mitigate exposure of dunes to coastal erosion (ERMD 2015).
+
+Recently, the expanding utilization of beaches as recreational zones has pressed regional authorities of numerous nations to remove all natural flotsam, such as detached macrophytes, driftwood and carrion, together with sanitary refuse and other litter of human origin such as glass, metal, plastic and their derivatives (Ryan and Swanepoel 1996). Mechanical removal has been viewed as a cheap method for removing unwanted debris and has been utilized by numerous coastal specialists without considering the long-term detrimental outcomes on coastal environments. There is developing worry with the issue and few studies have been done to assess the effect of mechanical beach cleaning on shores. Davidson et al. (1991) concluded that beach-cleaning machines damagingly affected invertebrate populations and that in regions of high recreational weight the steadiness of the dunes would also be affected. Kirby (1992) strengthened this worry, expressing that the removal of driftwood and particularly vast jetsam could damagingly affect certain isopods and ground insects that utilize this debris for housing. Llewellyn and Shackley (1996) compared four mechanically cleaned areas of Swansea Narrows, UK, with a control zone with no mechanical cleaning or hand-picking. The review showed that mechanical beach-cleaning had a genuine malicious impact on the general strandline-related species diversity and richness. Recently, Dugan & Hubbard (in press) arrived at similar conclusions when contrasting groomed and ungroomed beaches during a survey of 15 southern Californian beaches.
+
+With Cape Town’s coastline extending for 307 kilometres along the West Coast, around the Cape Peninsula, and beyond False Bay to the Kogelberg coast in the east. Our research aims to see if the routine of removing kelp for both commercial and aesthetic reasons that is managed by both DAFF and the Cape Town Municipality has any effect on the beach sand. By doing so, we analysed the Particulate organic matter of sand acquired from both cleared and none-cleared sites from 5 different sites with the following objectives; 1. Is POM content higher in uncleared areas than in cleared areas? 2. Is POM content different over time? 3. Does POM differ between sites? Hypothesising that, there is no significant difference in POM content between the cleared and the no-cleared sites.
+
+# Methods and Materials 
+
+```{r include=FALSE}
+library(tidyverse)
+library(ggpubr)
+library(lubridate)
+library(pgirmess)
+library(ggmap)
+```
+
+## Study Sites:
+
+Our study area consisted of 5 beaches around the city of Cape Town. These include Strandfontein (18° 33' 28.819" E, 34° 5' 11.626" S), Muizenberg (18°28'13.8"E, 34°06'30.5"S), Fish Hoek (18° 26' 5.71" E, 34° 8' 9.124" S), Hout Bay East (18°21'34.0"E, 34°02'50.0"S) and Hout Bay West (18°20'59.4"E, 34°02'46.4"S). These sites are divided up into 'cleared' and 'non-cleared' sections, where the ‘cleared’ sections are recognised by the City of Cape Town as kelp removal zones. Kelp is removed from Strandfontein beach on a seasonal basis, and a regular basis from the four remaining sites. 
+
+```{r include=TRUE}
+sites <- read.csv("sites.csv", sep=";")
+
+cape_point1 <-  get_map(location = c(lon = 18.6, lat = -34.2),
+                        zoom = 10, maptype = 'satellite')
+
+ggmap(cape_point1)
+
+```
+
+
+```{r echo=TRUE}
+cp1 <- ggmap(cape_point1) +
+  geom_point(data = sites, aes(x = long , y = lat ), 
+             colour = "red", size =  2.5) +
+  #coord_equal(xlim = c(18.2, 19.0), ylim = c(-34.5, -33.8), expand = FALSE) +
+  labs(y = "Latitude(°S)", x = "Longitude(°E)", title = "Site Map") 
+
+cp2 <- cp1 +
+  geom_text(data = sites,
+            aes(long , lat , label = site), 
+            hjust = 0, vjust = 0.7, 
+            size = 4, colour = "white") +
+  annotate("text", label = "Hout Bay West", 
+           x = 18.25, y = -34.11, 
+           size = 4, colour = "white") +
+  theme_bw()+
+  coord_cartesian()
+
+cp2
+
+```
+
+## Sampling methods
+
+Both cleared and non-cleared areas of each beach were sampled for POM content in the soil. Transects of various lengths were run perpendicular to the shore, and divided into 5 sections according to the length of the transect on that particular sampling occasion. Soil samples were collected at a depth of 20cm at each of the sections. Samples were taken back to the UWC laboratory, where they were weighed (wet weight), dried, weighed again (dry weight) and placed in a muffle furnace and finally reweighed (burned weight). The difference between the dry weight and burned weight is an estimate of the POM content. 
+Visual observations (metadata) were made regarding the amount of kelp present on the beaches at the time of sampling. These observations were recorded as zero, very low, low, average, above average and extreme. A ranking system was then applied to these observations from 1 to 5, where 1 = zero kelp and 5 representing an above average abundance of kelp.
+
+```{r include=TRUE}
+# load  data  -------------------------------------------------------------
+
+pom_data <- read.csv("updated.csv", sep = ";")
+
+# quick visualisation 
+ggplot(pom_data, aes(x = pom)) +
+  geom_density(aes(group = site, colour = site, fill = site),alpha = 0.3)
+
+# test for normality
+shapiro.test(pom_data$pom)
+
+```
+
+
+## Statistical methods:
+
+All data was recorded and entered into an Excel spread sheet, which was then converted to a CSV, in order to be read into the R Project for statistical analysis. The Shapiro test for normality was conducted on the data along with homoscedastic tests to determine the distribution and variance of the data. For non-normally distributed data, non-parametric tests such as the Kruskal- Wallis (non-parametric equivalent of an ANOVA) and the Wilcox (non-parametric equivalent of a one-sample t-test) tests were performed. Significant differences at p≤0.05 were analysed using Kruskalmc post hoc analysis in R. 
+
+A Wilcox test was used to compare the means of the POM content within cleared and non-cleared areas for all sites.
+
+```{r include=TRUE}
+# wilcox test
+compare_means(pom ~ area, data = pom_data, method = "wilcox")
+
+# create a graph
+# total pom content
+plot1 <- ggplot(data = pom_data, aes(x = area, y = pom, fill = area)) +
+  geom_boxplot(notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
+  labs(title = "Total POM content",
+       x = "Area",
+       y = "POM (g)") +
+  theme_minimal()   
+```
+
+A non-parametric Kruskal-Wallis test was used to compare the means of POM content across all sites, and a Kruskalmc post hoc analysis was conducted to identify where the differences lie between sites.
+
+```{r include=TRUE}
+# Kruskal-Wallis test
+kruskal.test(pom ~ as.factor(site), data = pom_data)
+
+# perform Kruskalmc post-hoc test
+kruskalmc(pom ~ as.factor(site), data = pom_data)
+
+# create graph
+# pom content for each site, both cleared and non-cleared
+plot2 <- ggplot(data = pom_data, aes(x = site, y = pom, fill = area)) +
+  geom_boxplot( notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black")+
+  labs(title = "POM content per site",
+       x = "Site",
+       y = "POM (g)") +
+  theme_minimal() 
+```
+
+To determine whether POM content changes over time, the site Strandfontein was removed due to it only being sampled once, whereas the other sites were sampled multiple times another Kruskal-Wallis test was run for POM as a factor of month, and the Kruskalmc post hoc test identified the months where a significant difference was observed.
+
+```{r include=TRUE}
+# removing the site Strandfontein due to it only being sampled once 
+time <- pom_data[-c(21:30), ]
+
+# Kruskal-Wallis
+kruskal.test(pom ~ as.factor(month), data = time)
+
+# perform Kruskalmc post-hoc test
+kruskalmc(pom ~ as.factor(month), data = time)
+
+# create graph
+plot3 <- ggplot(data = time, aes(x = month, y = pom, fill = area)) +
+  geom_boxplot( notch = TRUE) +
+  geom_jitter(alpha = 0.3, color = "black") +
+  labs(title = "Monthly POM content",
+       x = "Site",
+       y = "POM (g)") +
+  theme_minimal()  
+
+```
+
+For the metadata, in order to determine if transect lengths differed per area (cleared and non-cleared), a Wilcox test was run. 
+
+```{r include=TRUE}
+meta <- read.csv2("metadata.csv") 
+
+meta_long <- meta %>% 
+  gather(key = "variable", value = "value", -site, -date, -month, -beach_cast_cleared, - beach_cast_noncleared)
+
+#test for homoscedasticity 
+meta_long %>% 
+  #group_by(site) %>% 
+  summarise(meta_long_var = var(value))
+
+# wilcox test
+compare_means(value ~ variable, data = meta_long, method = "wilcox")
+
+# total transect length
+plot4 <- ggplot(data = meta_long, aes(x = variable, y = value, fill = variable)) +
+  geom_boxplot( notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
+  labs(title = "Total transect lengths",
+       x = "area",
+       y = "transect length (m)") +
+  theme_minimal()
+```
+
+Differences in sites for cleared areas were identified by running a Kruskal-Wallis test as well as the Kruskal post hoc test.
+
+```{r include=TRUE}
+
+sum_cleared_trans <-  meta %>% 
+  group_by(site) %>% 
+  summarise(mn_cleared = mean(cleared_transect), 
+            med_cleared = median(cleared_transect),
+            min_cleared = min(cleared_transect),
+            max_cleared = max(cleared_transect), 
+            sd_cleared = sd(cleared_transect), 
+            mn_cl_rank = mean(cl.))
+
+# Kruskal-Wallis
+kruskal.test(cleared_transect ~ as.factor(site), data = meta)
+
+# perform Kruskalmc post-hoc test
+kruskalmc(cleared_transect ~ as.factor(site), data = meta)
+
+# transect lengths for each site, cleared 
+plot5 <- ggplot(data = meta, aes(x = site, y = cleared_transect)) +
+  geom_boxplot(aes(colour = site), notch = TRUE)+ 
+  geom_jitter(alpha = 0.3, color = "black")+
+  geom_point(data = sum_cleared_trans, size = 6, shape = 18,
+             aes(y = mn_cleared), colour = "goldenrod") +
+  labs(title = "cleared",
+       x = "Site",
+       y = "transect lengths (m)") +
+  theme_minimal() 
+```
+
+Non-cleared areas showed a normal distribution in terms of transect length, and therefore an analysis of variance (ANOVA) test was used to compare the transect lengths between the 5 sites, and a Tukey test was used to identify where the differences lie.
+
+```{r include=TRUE}
+
+sum_non_cleared_trans <-  meta %>% 
+  group_by(site) %>% 
+  summarise(mn_non = mean(non_cleared_transect), 
+            med_non = median(non_cleared_transect),
+            min_non = min(non_cleared_transect),
+            max_non = max(non_cleared_transect), 
+            sd_non = sd(non_cleared_transect),
+            mn_non_rank = mean(non.))
+
+# anova
+summary(aov(non_cleared_transect ~ as.factor(site), data = meta))
+
+# perform Tukey post-hoc test
+TukeyHSD(aov(non_cleared_transect ~ as.factor(site), data = meta))
+
+# transect lengths for each site, non_cleared
+plot6 <- ggplot(data = meta, aes(x = site, y = non_cleared_transect)) +
+  geom_boxplot(aes(colour = site), notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
+  geom_point(data = sum_cleared_trans, size = 6, shape = 18,
+             aes(y = mn_cleared), colour = "goldenrod") +
+  labs(title = "non_cleared",
+       x = "Site",
+       y = "transect lengths (m)") +
+  theme_minimal()  
+```
+
+A correlation analysis was conducted between POM content and the transect lengths for each area, as well as the POM content and the kelp estimates. 
+
+```{r eval=FALSE, include=TRUE}
+cor.test(sum_pom$mn_pom, sum_cleared_trans$mn_cleared, method = "pearson")
+
+cor.test(sum_pom$mn_pom, sum_cleared_trans$mn_cleared, method = "pearson")
+
+cor.test(sum_pom$mn_pom, sum_non_cleared_trans$mn_non_rank, method = "pearson")
+
+cor.test(sum_pom$mn_pom, sum_cleared_trans$mn_cl_rank, method = "pearson")
+```
+
+# Results 
+
+```{r}
+# # A tibble: 1 x 8
+# .y.   group1  group2           p  p.adj p.format p.signif method  
+# <chr> <chr>   <chr>        <dbl>  <dbl> <chr>    <chr>    <chr>   
+#   1 pom   cleared non_cleared 0.0389 0.0389 0.039    *        Wilcoxon
+```
+
+Mean total POM content was significantly higher in cleared sites than in non-cleared sites (p = 0.0389) (plot1). 
+
+```{r}
+# Kruskal-Wallis rank sum test
+# data:  pom by as.factor(site)
+# Kruskal-Wallis chi-squared = 34.619, df = 4, p-value = 5.561e-07
+
+# Multiple comparison test after Kruskal-Wallis 
+# p.value: 0.05 
+# Comparisons
+# obs.dif critical.dif difference
+# Fish Hoek-Hout Bay East      31.39452     45.85033      FALSE
+# Fish Hoek-Hout Bay West      70.92667     50.37064       TRUE
+# Fish Hoek-Muizenberg         31.22395     53.79859      FALSE
+# Fish Hoek-Strandfontein      91.32333    127.42875      FALSE
+# Hout Bay East-Hout Bay West  39.53214     51.08515      FALSE
+# Hout Bay East-Muizenberg     62.61847     54.46816       TRUE
+# Hout Bay East-Strandfontein 122.71786    127.71288      FALSE
+# Hout Bay West-Muizenberg    102.15062     58.32434       TRUE
+# Hout Bay West-Strandfontein 162.25000    129.40451       TRUE
+# Muizenberg-Strandfontein     60.09938    130.77697      FALSE
+```
+POM content was significantly different (df = 4, p = 5.561e-07), between Fish Hoek and Hout Bay West, Hout Bay East and Muizenberg, Hout Bay West and Muizenberg & Hout Bay West and Strandfontein as depicted by the kruskalmc post hoc test.
+
+```{r}
+# Kruskal-Wallis rank sum test
+# data:  pom by as.factor(month)
+# Kruskal-Wallis chi-squared = 17.931, df = 2, p-value = 0.0001278
+
+# Multiple comparison test after Kruskal-Wallis 
+# p.value: 0.05 
+# Comparisons
+# obs.dif critical.dif difference
+# Apr-Feb   22.29425     64.05939      FALSE
+# Apr-Mar   55.01370     31.11295       TRUE
+# Feb -Mar  32.71944     64.70571      FALSE
+```
+POM differs significantly over time (p = 0.0001278), with the significant difference occurring between March and April.
+
+```{r}
+# A tibble: 1 x 8
+# .y.   group1           group2                   p p.adj p.format p.signif method  
+# <chr> <chr>            <chr>                <dbl> <dbl> <chr>    <chr>    <chr>   
+#   1 value cleared_transect non_cleared_transect 0.106 0.106 0.11     ns       Wilcoxon
+```
+Due to an unexplained error in determining the distribution of transect length as a factor of site, the metadata was converted into long form. The Shapiro test produced a p-value of 0.03587, suggesting that the data is not normally distributed and therefore a Wilcox test was performed resulting in there being no significant difference between means of cleared transects and non-cleared transects. 
+
+```{r}
+# Kruskal-Wallis rank sum test
+# data:  cleared_transect by as.factor(site)
+# Kruskal-Wallis chi-squared = 6.5546, df = 4, p-value = 0.1614
+
+# Tukey multiple comparisons of means
+# 95% family-wise confidence level
+# Fit: aov(formula = cleared_transect ~ as.factor(site), data = meta)
+# $`as.factor(site)`
+# diff         lwr      upr     p adj
+# Hout Bay East-Fish Hoek             1.90952381  -2.1563516 5.975399 0.6700437
+# Hout Bay West -Fish Hoek            1.96666667  -2.5000570 6.433390 0.7203974
+ # Muizenberg-Fish Hoek                5.14166667   0.3516392 9.931694 0.0299052
+# Strandfontein beach-Fish Hoek      -2.73333333 -14.0333497 8.566683 0.9578892
+# Hout Bay West -Hout Bay East        0.05714286  -4.4729417 4.587227 0.9999996
+# Muizenberg-Hout Bay East            3.23214286  -1.6170230 8.081309 0.3340943
+# Strandfontein beach-Hout Bay East  -4.64285714 -15.9680687 6.682354 0.7697352
+# Muizenberg-Hout Bay West            3.17500000  -2.0148639 8.364864 0.4201891
+# Strandfontein beach-Hout Bay West  -4.70000000 -16.1752208 6.775221 0.7703307
+# Strandfontein beach-Muizenberg     -7.87500000 -19.4798885 3.729888 0.3165357
+```
+The cleared and non-cleared areas were addressed separately. The only sites with significantly different cleared transect means were Muizenberg- Fish Hoek (p =0.0299052), concluded from the kruskalmc post hoc test.
+
+```{r}
+# Df Sum Sq Mean Sq F value Pr(>F)  
+# as.factor(site)  4  184.3   46.09   2.537 0.0537 .
+# Residuals       43  781.1   18.17                 
+# ---
+#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+The non-cleared transects showed a normal distribution, therefore an analysis of variance could be conducted, but concluding that there is no significant difference (p = 0.0537) between the transect lengths in non-cleared areas of the sites.   
+
+# Discussion 
+
+Our findings demonstrate that the highest POM content can unexpectedly be found on both cleared and non-cleared beaches, which therefore reject both our Null hypothesis and alternative hypothesis Moreover, it was observed that POM content does not generally differ monthlyThis may mean that POM content is not influenced by seasonality. Although, this might not be a plausible inference since the study took place only over three months. It has been observed that on beaches with heavy wrack loadings, an anoxic layer forms beneath the seaweed having a hostile effect on meiofauna (McGwynne et al. 1988). This could explain why there is less POM on uncleared beaches. However, on those beaches with smaller amounts of seaweed, the nutrients from the algal leachates and seaweed inhabitants’ faeces percolate to the interstitial microorganisms and meiofauna (White et al. 2005). Of the microbial regeneration of nutrients from kelp wrack, 95% of nitrogen may be returned to the sea (Koop et al. 1982); concentrations of nitrate and phosphate are higher in coastal waters where beaches are adjacent with accumulations of wrack (Robertson and Hansen 1982). Therefore, a disadvantage could be that removing seaweed regularly from an area could interfere with nutrient recycling from faecal matter and may deprive interstitial organisms of the dissolved organic material that is leached from the kelp (Anderson et al. 1989). 
+
+The non-removal of kelp from the focused beaches of this study may be beneficial. Indeed, the higher POM content in the soil on some cleared beaches may contribute to the succession of dune vegetation (McKenna et al. 2000), given that dune formation is influenced by kelp wrack deposition higher up on the shore (Zemke-White et al. 2005). Although, additional input of POM across a certain threshold may not be detrimental, but rather poses no additional advantages on vegetation (Haslam and Hopkins 1996). However, little research has looked at the effect of POM in beach soils on the dune vegetation. 
+The increase of wrack generally brings an increase of decomposers, subsequently increasing POM and dissolved nutrients, respectively (e.g. Dugan et al. 2011). However, since kelp is absent in cleared areas, one would expect that the amount of POM should decrease. Furthermore, since the Cape Town Municipality facilitates kelp removal, regularly at the cleared areas, (Yoshikawa 2013) there is little time for decomposers to break down the kelp to the high POM content we observe. An explanation for the high POM content on cleared beaches may be related to wind (e.g. Moore 1972). Urbanization along the coast may promote blowback of sediment and, therefore, significantly increase the POM content when it should be expectedly low. We can then assume that with an increase in turbulence comes an increase in blowback of POM, although the wind may sometimes be strong enough to blow the particulate into the sea, a significant amount might still be lost on the sandy shore on the way to the sea. If urbanization was not present, or rather less prevalent, we might expect significant losses of particulate as it would be carried off by the wind and deposited elsewhere. Even markedly further from the site.     
+
+The high POM contents at Hout Bay West, Fish Hoek and Muizenberg may be related to the high number of dogs that are walked on these beaches, more specifically when kelp has not yet been removed from the beaches. These dogs are likely to deposit their faeces on the beach where, not only limited to Cape Town beaches, dog owners rarely remove the faeces from the beach (Wright et al. 2009). Dogs may excrete their faeces among the kelp, increasing the rate of decomposition and, therefore, increase the POM content resulting in a high content once the kelp has been removed (Martin and Gruber 2005). The way this may occur is in the high number of microbes that are present in dog faeces (Martin and Gruber 2005). Additionally, trampling of POM into the beach soil by both dogs and humans may serve to increase the rate at which particulates are incorporated into the beach soils and, consequently, the point at which they are most accessible for processing by microbes. Indeed, the amount of trampling events may increase with the amount of people and animals present. One would also expect that this would increase with seasonality since people would choose to walk on the beach and walk their dogs in favourable. However, given the relatively short period of this study, this may not be significant to the obtained results. Nevertheless, these combined effects, along with wind blowback may therefore increase the POM content. Additionally, the storm drain present at Hout Bay West may leach nutrients into the beach soils promoting microbial diversity and abundance, therefore increasing the rate of decomposition of kelp. A similar inference may be true for Muizenberg where the Zandvlei estuary may also bring additional nutrients to the beach, via the estuary itself and from shore waves.  However, this too occurs seasonally (Thornton et al. 1995) and, therefore, may not be of much significance.   
+
+# Conclusion
+
+We can conclude that there are different factors influencing the higher POM content in uncleared beach soils. A higher POM content brings about a higher diversity and abundance of microbial organisms. Whether this is of concern to the smaller beach ecosystem remains unclear and is to be considered in future studies. Indeed, more studies similar to this need to be conducted to further shed light on the relation of kelp removal to POM content in the soil on beaches and over a longer period of time.
+
+This study focused on a single city's beaches, it would be interesting to compare the results of other beaches in other parts of the world and what action the authorities managing these areas may take. Moreover, since the method of kelp management by the Cape Town Municipality is to dispose of the kelp in landfills and not for commercial uses (Yoshikawa 2013), one must consider that the former method may result in a waste disposal problem on land. To use the beach-cast kelp as fertiliser may be a highly plausible method that would be of environmental and economic interest, which may also serve to partly replace the use of commercial fertilisers in urbanized coastal areas (Jöborn et al. 2001).  Besides the supply of nutrients (which may be caused by growth hormones occurring in the macroalgae), the use of composted macroalgae improves the structure of the soil by increasing the content of humus (Haslam and Hopkins 1996).  Additionally, if burial of kelp on site was accepted as a common method, the POM in the soil may increase prompting more activity in the soil on apparently cleared beaches. Griffiths et al. (1983) observed that particulate or dissolved kelp detritus becomes part of the sand column is taken up by those organisms found below the driftline, namely bacteria, nematodes and oligochaetes. The results from this study could act as a tool in further management of kelp wrack on Cape Town beaches to ensure the best management practices.
+
+#Acknowledgements
+
+We would like to thank Ross Coppin for providing us with City of Cape Town data, explaining the topic to fit our understanding, guiding us with R and mentoring us along the way. We would again like to thank Carlin Landsberg for helping us with R and Akira Govender for helping us with the Reference list write-up. 
+
+# References 
+
+Anderson RJ, Simons RH, Jarman NG. 1989. Commercial seaweeds in Southern Africa: A review of utilization and research. South African Journal of Marine Research 8: 277–299.
+
+Angus S. 2001. The Outer Hebrides, Moor and Machair. The White Horse: Cambridge and Isle of Harris. pp 195–243.
+
+Chapman VJ, Chapman DJ. 1980. Seaweeds and their uses (3rd edn). Chapman and Hall Ltd: London. pp 30–43.
+
+Dugan JE, Hubbard DM, Page HM, Schimel JP. 2011. Marine macrophyte wrack inputs and dissolved nutrients in beach sands. Estuaries and Coasts: 34: 839–850.
+
+Environmental Resource Management Department. 2015. Maintenance Management Plan: Dunes and Beaches. Maintenance Management Plan: Dunes and Beaches. Coastal Cleaning Protocol for The City of Cape Town May. 
+
+Griffiths CL, Stenton-Dozey JME, Koop K. 1983. Kelp Wrack and the Flow of Energy Through a Sandy Beach Ecosystem. In: McLachlan A, Erasmus T (eds), Sandy Beaches as Ecosystems. Dordrecht: Springer. pp 547–556.
+
+Haslam SFI, Hopkins DW. 1996. Physical and biological effects of kelp (seaweed) added to soil. Applied Soil Ecology 3: 257–261.
+
+Kirby P. 1992. Habitat management for invertebrates: A practical handbook. Joint Nature Conservation Committee. Publication of the Royal Society for the Protection of Birds, London.
+
+Kirkman H, Kendrick GA. 1997. Ecological significance and commercial harvesting of drifting and beach-cast macro-algae and seagrasses in Australia: A review. Journal of Applied Phycology 9: 311–326.
+
+Koop JS, Newell RC, Lucas MI. 1982. Microbial regeneration of nutrients from the decomposition of macrophyte debris on the shore. Marine Ecology Progress Series 9: 91–96.
+
+Lastra M, Rodil IF, Sánchez-Mata A, García-Gallego M, Mora J. 2014. Fate and processing of macroalgal wrack subsidies in beaches of Deception Island, Antarctic Peninsula. Journal of Sea Research 88: 1–10.
+
+Llewellyn PJ, Shackley SE. 1996. The effects of mechanical beach-cleaning on invertebrate populations. British Wildlife 7: 147–155.
+
+Marsden ID. 1991a. Kelp-sandhopper interactions on a sand beach in New Zealand. I. Drift composition and distribution. Journal of Experimental Marine Biology and Ecology 152: 61–74.
+
+Martin A, Gruber S, Lakes JMG. 2005. Amplification of indicator bacteria in organic debris on southern California beaches. Weston Solutions, Technical Paper 507: 1-7
+
+McGwynne LE, McLachlan A, Furstenberg JP. 1988. Wrack breakdown on sandy beaches – its impact on interstitial meiofauna. Marine Environmental Research 25: 213–232.
+
+McKenna J, MacLeod M, Power J, Cooper A. 2000. Rural Beach Management: A Good Practice Guide. Donegal County Council.
+
+Mellbrand, K, Lavery PS, Hyndes G, Hambäck PA. 2011. Linking land and sea: different pathways for marine subsidies. Ecosystems 14: 732–744.
+
+Moore PG. 1972. Particulate matter in the sublittoral zone of an exposed coast and its ecological significance with special reference to the fauna inhabiting kelp holdfasts. Journal of Experimental Marine Biology and Ecology 10: 59¬–80.
+
+Orr M, Zimmer M, Jelinski DE, Mew M. 2005. Wrack deposition on different beach types: spatial and temporal variation in the pattern of subsidy. Ecology 86: 1496-1507.
+
+Revell DL, Dugan JE, Hubbard DM. 2011. Physical and Ecological Responses of Sandy Beaches to the 1997-98 El Nino. Journal of Coastal Research 27: 718-730.
+
+Robertson AI, Hansen JA. 1982. Decomposing Seaweeds; A nuisance or a vital link in coastal food chains? CSLRO Marine Laboratories Report 1979: 75–83.
+
+Rossi F, Underwood A. 2002. Small-scale disturbance and increased nutrients as influences on intertidal macrobenthic assemblages: experimental burial of wrack in different intertidal environments. Marine Ecology Progress Series 241: 29–39.
+
+Ryan PG, Swanepoel D. 1996. Cleaning beaches: Sweeping the rubbish under the carpet. South African Journal of Science 92: 275–276.
+
+Stenton-Dozey JME, Griffiths CL. 1983. The fauna associated with kelp stranded on a sandy beach. In: A McLachlan, T Erasmus (eds), Sandy beaches as ecosystems. Developments in Hydrobiology. Dordrecht: Springer. pp 557–568.
+
+Thorsen MK, Woodward S, McKenzie BM. 2010. Kelp (Laminaria digitata) increases germination and affects rooting and plant vigour in crops and native plants from an arable grassland in the Outer Hebrides, Scotland. Journal Coastal Conservation 14: 239–247.
+
+Thornton JA, Beekman H, Boddington G, Dick R, Harding WR, Lief M, Morrison IR, Quick AJ. 1995. The ecology and management of Zandvlei (Cape Province, South Africa), an enriched shallow African estuary. In: McComb, A (ed), Eutrophic shallow estuaries and lagoons. Florida: CRC Press. pp 109–126. 
+
+Wilson EE, Wolkovich EM. 2011. Scavenging, How carnivores and carrion structure communities. Trends in ecology & evolution 26: 129–135.
+
+Wright ME, Solo-Gabriele HM, Elmir S, Fleming LE. 2009. Microbial load from animal faeces at a recreational beach. Marine pollution bulletin 58: 1649–1656.
+
+Yoshikawa M. 2013. Removing Drift Kelp from Cape Peninsula Beaches: Rationales, Conflicts and Ecological Effects. Honours thesis, University of Cape Town, South Africa. 
+
+Zemke-White WL, Speed SR, McClary, DJ. 2005. Beach-cast seaweed: A review. New Zealand Fisheries Assessment Report.
+
+
+# Appendix
+
+```{r}
+plot1
+```
+
+```{r}
+plot2
+```
+
+```{r}
+plot3
+```
+
+```{r}
+plot4
+```
+```{r}
+plot5
+```
+
+```{r}
+plot6
+```
+

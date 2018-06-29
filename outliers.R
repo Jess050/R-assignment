@@ -8,7 +8,6 @@ library(tidyverse)
 library(ggpubr)
 library(lubridate)
 library(pgirmess)
-library(ggmap)
 
 # load  data  -------------------------------------------------------------
 
@@ -26,47 +25,19 @@ ggplot(pom_data, aes(x = pom)) +
   geom_density(aes(group = site, colour = site, fill = site),alpha = 0.3)
 
 # test for normality
- shapiro.test(pom_data$pom)
+# shapiro.test(pom_data$pom)
 # W = 0.64458, p-value < 2.2e-16
 # if p < 0.05 significantly different from normal
 # p > 0.05 not significantly different from normal (want?)
 # == not normal 
 
-# site maps  -------------------------------------------------------------------
-
-sites <- read.csv("sites.csv", sep=";")
-
-cape_point1 <-  get_map(location = c(lon = 18.6, lat = -34.2),
-                        zoom = 10, maptype = 'satellite')
-
-ggmap(cape_point1)
-
-cp1 <- ggmap(cape_point1) +
-  geom_point(data = sites, aes(x = long , y = lat ), 
-             colour = "red", size =  2.5) +
-  #coord_equal(xlim = c(18.2, 19.0), ylim = c(-34.5, -33.8), expand = FALSE) +
-  labs(y = "Latitude(°S)", x = "Longitude(°E)", title = "Site Map") 
-
-cp1
-
-cp2 <- cp1 +
-  geom_text(data = sites,
-            aes(long , lat , label = site), 
-            hjust = 0, vjust = 0.7, 
-            size = 4, colour = "white") +
-  annotate("text", label = "Hout Bay West", 
-           x = 18.25, y = -34.11, 
-           size = 4, colour = "white") +
-  theme_bw()+
-  coord_cartesian()
-
-cp2
-
 
 # formulating hypotheses and objectives  ----------------------------------------------
 
 # hypotheses:
-#
+# HO: POM content of the soil is lower on cleared beaches than on non-cleared beaches. 
+# H1: POM content of the soil is higher on cleared beaches than on non-cleared beaches.
+# or 
 # H0: there is no significant difference in POM content between cleared and non-cleared sites. 
 # H1: there is a significant difference in POM content betweeen cleared and uncleared areas? 
 
@@ -106,8 +77,8 @@ pom_data %>%
 
 # pom content for each site, both cleared and non-cleared
 ggplot(data = pom_data, aes(x = site, y = pom, fill = area)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE)+
-  coord_cartesian( ylim = c(0,1.2)) +
+  geom_boxplot( notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black")+
   labs(title = "POM content per site",
        x = "Site",
        y = "POM (g)") +
@@ -128,14 +99,14 @@ kruskalmc(pom ~ as.factor(site), data = pom_data)
 # Comparisons
 # obs.dif critical.dif difference
 # Fish Hoek-Hout Bay East      31.39452     45.85033      FALSE
- # Fish Hoek-Hout Bay West      70.92667     50.37064       TRUE
+# Fish Hoek-Hout Bay West      70.92667     50.37064       TRUE
 # Fish Hoek-Muizenberg         31.22395     53.79859      FALSE
 # Fish Hoek-Strandfontein      91.32333    127.42875      FALSE
 # Hout Bay East-Hout Bay West  39.53214     51.08515      FALSE
- # Hout Bay East-Muizenberg     62.61847     54.46816       TRUE
+# Hout Bay East-Muizenberg     62.61847     54.46816       TRUE
 # Hout Bay East-Strandfontein 122.71786    127.71288      FALSE
- # Hout Bay West-Muizenberg    102.15062     58.32434       TRUE
- # Hout Bay West-Strandfontein 162.25000    129.40451       TRUE
+# Hout Bay West-Muizenberg    102.15062     58.32434       TRUE
+# Hout Bay West-Strandfontein 162.25000    129.40451       TRUE
 # Muizenberg-Strandfontein     60.09938    130.77697      FALSE
 
 # true is where the differences lie 
@@ -149,7 +120,7 @@ pom_data %>%
   group_by(area) %>% 
   summarise(pom_data_dist = as.numeric(shapiro.test(pom)[2]), 
             pom_data_var = var(pom))
- 
+
 # # A tibble: 2 x 3
 # area                      pom_data_dist pom_data_var
 # <fct>                             <dbl>        <dbl>
@@ -176,8 +147,8 @@ pom_data %>%
 
 # total pom content
 ggplot(data = pom_data, aes(x = area, y = pom, fill = area)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE)+
-  coord_cartesian(ylim = c(0, 1)) +
+  geom_boxplot( notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
   labs(title = "Total POM content",
        x = "Area",
        y = "POM (g)") +
@@ -216,13 +187,13 @@ time <- pom_data[-c(21:30), ]
 
 # pom content per month
 ggplot(data = time, aes(x = month, y = pom, fill = area)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE) +
-  coord_cartesian( ylim = c(0, 1.3)) +
+  geom_boxplot( notch = TRUE) +
+  geom_jitter(alpha = 0.3, color = "black") +
   labs(title = "Monthly POM content",
        x = "Site",
        y = "POM (g)") +
   theme_minimal()  
-  
+
 
 # Kruskal-Wallis
 kruskal.test(pom ~ as.factor(month), data = time)
@@ -284,7 +255,8 @@ meta_long %>%
 
 # total transect length
 ggplot(data = meta_long, aes(x = variable, y = value, fill = variable)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE)+
+  geom_boxplot( notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
   labs(title = "Total transect lengths",
        x = "area",
        y = "transect length (m)") +
@@ -292,7 +264,8 @@ ggplot(data = meta_long, aes(x = variable, y = value, fill = variable)) +
 
 # total transect length per site
 ggplot(data = meta_long, aes(x = site, y = value, fill = variable)) +
-  geom_boxplot(outlier.shape = NA, notch = TRUE)+
+  geom_boxplot( notch = TRUE)+ 
+  geom_jitter(alpha = 0.3, color = "black")+
   labs(title = "transect lengths per site",
        x = "area",
        y = "transect length (m)") +
@@ -339,13 +312,13 @@ sum_cleared_trans <-  meta %>%
             med_cleared = median(cleared_transect),
             min_cleared = min(cleared_transect),
             max_cleared = max(cleared_transect), 
-            sd_cleared = sd(cleared_transect), 
-            mn_cl_rank = mean(cl.))
+            sd_cleared = sd(cleared_transect))
 
 
 # transect lengths for each site, cleared 
 ggplot(data = meta, aes(x = site, y = cleared_transect)) +
-  geom_boxplot(aes(colour = site), outlier.shape = NA, notch = TRUE)+
+  geom_boxplot(aes(colour = site), notch = TRUE)+ 
+  geom_jitter(alpha = 0.3, color = "black")+
   geom_point(data = sum_cleared_trans, size = 6, shape = 18,
              aes(y = mn_cleared), colour = "goldenrod") +
   labs(title = "cleared",
@@ -414,8 +387,7 @@ sum_non_cleared_trans <-  meta %>%
             med_non = median(non_cleared_transect),
             min_non = min(non_cleared_transect),
             max_non = max(non_cleared_transect), 
-            sd_non = sd(non_cleared_transect),
-            mn_non_rank = mean(non.))
+            sd_non = sd(non_cleared_transect))
 
 shapiro.test(meta$non_cleared_transect)
 
@@ -426,7 +398,8 @@ shapiro.test(meta$non_cleared_transect)
 
 # transect lengths for each site, non_cleared
 ggplot(data = meta, aes(x = site, y = non_cleared_transect)) +
-  geom_boxplot(aes(colour = site),outlier.shape = NA, notch = TRUE)+
+  geom_boxplot(aes(colour = site), notch = TRUE)+
+  geom_jitter(alpha = 0.3, color = "black") +
   geom_point(data = sum_cleared_trans, size = 6, shape = 18,
              aes(y = mn_cleared), colour = "goldenrod") +
   labs(title = "non_cleared",
@@ -434,7 +407,7 @@ ggplot(data = meta, aes(x = site, y = non_cleared_transect)) +
        y = "transect lengths (m)") +
   theme_minimal()  
 
-# anova
+
 summary(aov(non_cleared_transect ~ as.factor(site), data = meta))
 # Df Sum Sq Mean Sq F value Pr(>F)  
 # as.factor(site)  4  184.3   46.09   2.537 0.0537 .
@@ -442,82 +415,68 @@ summary(aov(non_cleared_transect ~ as.factor(site), data = meta))
 # ---
 #   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-# perform Tukey post-hoc test
-TukeyHSD(aov(non_cleared_transect ~ as.factor(site), data = meta))
-
-# Tukey multiple comparisons of means
-# 95% family-wise confidence level
-# Fit: aov(formula = non_cleared_transect ~ as.factor(site), data = meta)
-# $`as.factor(site)`
-#                                        diff         lwr       upr     p adj
-# Hout Bay East-Fish Hoek             2.50476190  -2.0043275  7.013851 0.5170590
-# Hout Bay West -Fish Hoek            0.03333333  -4.9203002  4.986967 1.0000000
-# Muizenberg-Fish Hoek                5.30833333  -0.0038468 10.620513 0.0502468
-# Strandfontein beach-Fish Hoek       1.93333333 -10.5984784 14.465145 0.9919965
-# Hout Bay West -Hout Bay East       -2.47142857  -7.4953299  2.552473 0.6306858
-# Muizenberg-Hout Bay East            2.80357143  -2.5741937  8.181337 0.5780777
-# Strandfontein beach-Hout Bay East  -0.57142857 -13.1311819 11.988325 0.9999338
-# Muizenberg-Hout Bay West            5.27500000  -0.4806020 11.030602 0.0864328
-# Strandfontein beach-Hout Bay West   1.90000000 -10.8261149 14.626115 0.9929368
-# Strandfontein beach-Muizenberg     -3.37500000 -16.2449174  9.494917 0.9441166
-
-#no significant differences 
-
-# correlations --------------------------------------------------------------
-
-# between pom and transect lengths
-
-library(corrplot)
-
-cleared <-  cor.test(sum_pom$mn_pom, sum_cleared_trans$mn_cleared, method = "pearson")
-#  Pearson's product-moment correlation
-# data:  sum_pom$mn_pom and sum_cleared_trans$mn_cleared
-# t = 1.8698, df = 3, p-value = 0.1583
-# alternative hypothesis: true correlation is not equal to 0
-# 95 percent confidence interval:
-#  -0.4213993  0.9809607
-# sample estimates:
-#       cor 
-# 0.7336154
 
 
-non_cleared <- cor.test(sum_pom$mn_pom, sum_non_cleared_trans$mn_non, method = "kendall")
-#  Pearson's product-moment correlation
-# data:  sum_pom$mn_pom and sum_non_cleared_trans$mn_non
-# t = -0.21751, df = 3, p-value = 0.8418
-# alternative hypothesis: true correlation is not equal to 0
-# 95 percent confidence interval:
-#  -0.9071436  0.8512443
-# sample estimates:
-#        cor 
-# -0.1245991
-
-# between pom and kelp estimates (ranked)
- 
-cor.test(sum_pom$mn_pom, sum_non_cleared_trans$mn_non_rank, method = "pearson")
-# Pearson's product-moment correlation
-# 
-# data:  sum_pom$mn_pom and sum_non_cleared_trans$mn_non_rank
-# t = -1.3102, df = 3, p-value = 0.2814
-# alternative hypothesis: true correlation is not equal to 0
-# 95 percent confidence interval:
-# -0.9695164  0.5964576
-# sample estimates:
-# cor 
-# -0.6032707
-
-cor.test(sum_pom$mn_pom, sum_cleared_trans$mn_cl_rank, method = "pearson")
-# Pearson's product-moment correlation
-# 
-# data:  sum_pom$mn_pom and sum_cleared_trans$mn_cl_rank
-# t = 2.3534, df = 3, p-value = 0.09999
-# alternative hypothesis: true correlation is not equal to 0
-# 95 percent confidence interval:
-# -0.2656075  0.9866057
-# sample estimates:
-# cor 
-# 0.8053916
+# site maps  -------------------------------------------------------------------
+library(ggmap)
 
 
+sites <- read.csv("sites.csv", sep=";")
+
+cape_point1 <-  get_map(location = c(lon = 18.6, lat = -34.2),
+                        zoom = 10, maptype = 'satellite')
+
+ggmap(cape_point1)
+
+cp1 <- ggmap(cape_point1) +
+  geom_point(data = sites, aes(x = long , y = lat ), 
+             colour = "red", size =  2.5) +
+  #coord_equal(xlim = c(18.2, 19.0), ylim = c(-34.5, -33.8), expand = FALSE) +
+  labs(y = "Latitude(°S)", x = "Longitude(°E)", title = "Site Map") 
+
+cp1
+
+cp2 <- cp1 +
+  geom_text(data = sites,
+            aes(long , lat , label = site), 
+            hjust = 0, vjust = 0.7, 
+            size = 4, colour = "white") +
+  annotate("text", label = "Hout Bay West", 
+           x = 18.25, y = -34.11, 
+           size = 4, colour = "white") +
+  theme_bw()+
+  coord_cartesian()
+
+cp2
+  
 
 
+library(jpeg)
+strandfontein <- readJPEG("/Users/JESSE_/Desktop/honours/R assignment final/R-assignment/maps/strandfontein.jpg", native = TRUE)
+MUIZENBERG <- readJPEG("/Users/JESSE_/Desktop/honours/R assignment final/R-assignment/maps/MUIZENBERG.jpg", native = TRUE)
+FISH_HOEK <- readJPEG("/Users/JESSE_/Desktop/honours/R assignment final/R-assignment/maps/FISH HOEK.jpg", native = TRUE)
+HBE <- readJPEG("/Users/JESSE_/Desktop/honours/R assignment final/R-assignment/maps/HBE.jpg", native = TRUE)
+HBW <- readJPEG("/Users/JESSE_/Desktop/honours/R assignment final/R-assignment/maps/HBW.jpg", native = TRUE)
+  
+  
+library(ggplot2)
+
+final <- cp2 + 
+  annotation_custom(grob = ggplotGrob(strandfontein),
+                    xmin = 18.8, xmax = 19,
+                    ymin = -34.4, ymax = -34.6) +
+  annotation_custom(grob = ggplotGrob(MUIZENBERG),
+                    xmin = 18.6, xmax = 18.8,
+                    ymin = -34.4, ymax = -34.6) +
+  annotation_custom(grob = ggplotGrob(FISH_HOEK),
+                    xmin = 18.4, xmax = 18.6,
+                    ymin = -34.4, ymax = -34.6) +
+  annotation_custom(grob = ggplotGrob(HBE),
+                    xmin = 18.2, xmax = 18.4,
+                    ymin = -34.4, ymax = -34.6) +
+  annotation_custom(grob = ggplotGrob(HBW),
+                    xmin = 18.2, xmax = 18.4,
+                    ymin = -34.2, ymax = -34.4)
+final
+
+ggsave(final, filename = "final_sitemap.png")

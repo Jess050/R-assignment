@@ -1,49 +1,49 @@
-date;month;site;cleared_transect;non_cleared_transect;beach_cast_cleared;beach_cast_noncleared
-25/02/2018;Feb;Hout Bay East;36;33;low;low
-25/02/2018;Feb;Muizenberg;32;36;average;average
-25/02/2018;Feb;Fish Hoek;33;34;low;low
-02/03/0208;Mar;Hout Bay West ;32;36;very low;low
-02/03/0208;Mar;Strandfontein beach;30;36;very low;average
-02/03/0208;Mar;Fish Hoek;38;35;very low;low
-14/03/2018;Mar;Hout Bay West ;45;38;zero;very low
-14/03/2018;Mar;Fish Hoek;30;35;very low;very low
-14/03/2018;Mar;Muizenberg;32;30;zero;average
-16/03/2018;Mar;Hout Bay West ;37;35;very low;very low
-16/03/2018;Mar;Hout Bay East;38;40;very low;very low
-16/03/2018;Mar;Fish Hoek;33;40;very low;very low
-20/03/2018;Mar;Hout Bay East;36;40;very low;low
-20/03/2018;Mar;Muizenberg;32;38;very low;average
-20/03/2018;Mar;Fish Hoek;36;38;zero;average
-23/03/2018;Mar;Hout Bay East;36;42;low;low
-23/03/2018;Mar;Fish Hoek;38;41;very low;low
-23/03/2018;Mar;Muizenberg;47;48;low;average
-28/03/2018;Mar;Hout Bay East;32;33;low;average
-28/03/2018;Mar;Hout Bay West ;36;40;low;average
-28/03/2018;Mar;Fish Hoek;33;36;very low;low
-30/03/2018;Mar;Fish Hoek;33;35;very low;low
-30/03/2018;Mar;Hout Bay East;34;38;average;average
-30/03/2018;Mar;Hout Bay West ;36;33;low;average
-04/04/2018;Apr;Hout Bay East;33;40;low;average
-04/04/2018;Apr;Fish Hoek;35;36;low;very low
-04/04/2018;Apr;Muizenberg;37;40;average;average
-06/04/2018;Apr;Hout Bay West ;33;32;very low;low
-06/04/2018;Apr;Hout Bay East;34;33;very low;low
-06/04/2018;Apr;Fish Hoek;34;33;zero;low
-12/04/2018;Apr;Hout Bay West ;33;34;average;average
-12/04/2018;Apr;Hout Bay East;34;36;average;average
-12/04/2018;Apr;Muizenberg;40;43;average;average
-13/04/2018;Apr;Fish Hoek;28;25;above average;above average
-13/04/2018;Apr;Hout Bay West ;33;32;average;average
-13/04/2018;Apr;Hout Bay East;34;33;average;average
-17/04/2018;Apr;Hout Bay East;37;42;average;average
-17/04/2018;Apr;Fish Hoek;33;36;average;average
-17/04/2018;Apr;Muizenberg;38;41;very low;average 
-20/04/2018;Apr;Hout Bay East;38;40;average;average
-20/04/2018;Apr;Muizenberg;45;39;average;average
-20/04/2018;Apr;Fish Hoek;30;29;average;very low
-24/04/2018;Apr;Hout Bay East;30;30;average;average
-24/04/2018;Apr;Hout Bay West ;28;31;average;average
-24/04/2018;Apr;Fish Hoek;29;28;average;average
-27/04/2018;Apr;Hout Bay East;33;32;low;average
-27/04/2018;Apr;Hout Bay West ;34;30;low;average
-27/04/2018;Apr;Fish Hoek;28;30;above average;above average
+date;month;site;cleared_transect;non_cleared_transect;beach_cast_cleared;beach_cast_noncleared;cl.;non.
+25/02/2018;Feb;Hout Bay East;36;33;low;low;3;3
+25/02/2018;Feb;Muizenberg;32;36;average;average;4;4
+25/02/2018;Feb;Fish Hoek;33;34;low;low;3;3
+02/03/2018;Mar;Hout Bay West ;32;36;very low;low;2;3
+02/03/2018;Mar;Strandfontein beach;30;36;very low;average;2;4
+02/03/2018;Mar;Fish Hoek;38;35;very low;low;2;3
+14/03/2018;Mar;Hout Bay West ;45;38;zero;very low;1;2
+14/03/2018;Mar;Fish Hoek;30;35;very low;very low;2;2
+14/03/2018;Mar;Muizenberg;32;30;zero;average;1;4
+16/03/2018;Mar;Hout Bay West ;37;35;very low;very low;2;2
+16/03/2018;Mar;Hout Bay East;38;40;very low;very low;2;2
+16/03/2018;Mar;Fish Hoek;33;40;very low;very low;2;2
+20/03/2018;Mar;Hout Bay East;36;40;very low;low;2;3
+20/03/2018;Mar;Muizenberg;32;38;very low;average;2;4
+20/03/2018;Mar;Fish Hoek;36;38;zero;average;1;4
+23/03/2018;Mar;Hout Bay East;36;42;low;low;3;3
+23/03/2018;Mar;Fish Hoek;38;41;very low;low;2;3
+23/03/2018;Mar;Muizenberg;47;48;low;average;3;4
+28/03/2018;Mar;Hout Bay East;32;33;low;average;3;4
+28/03/2018;Mar;Hout Bay West ;36;40;low;average;3;4
+28/03/2018;Mar;Fish Hoek;33;36;very low;low;2;3
+30/03/2018;Mar;Fish Hoek;33;35;very low;low;2;3
+30/03/2018;Mar;Hout Bay East;34;38;average;average;4;4
+30/03/2018;Mar;Hout Bay West ;36;33;low;average;3;4
+04/04/2018;Apr;Hout Bay East;33;40;low;average;3;4
+04/04/2018;Apr;Fish Hoek;35;36;low;very low;3;2
+04/04/2018;Apr;Muizenberg;37;40;average;average;4;4
+06/04/2018;Apr;Hout Bay West ;33;32;very low;low;2;3
+06/04/2018;Apr;Hout Bay East;34;33;very low;low;2;3
+06/04/2018;Apr;Fish Hoek;34;33;zero;low;1;3
+12/04/2018;Apr;Hout Bay West ;33;34;average;average;4;4
+12/04/2018;Apr;Hout Bay East;34;36;average;average;4;4
+12/04/2018;Apr;Muizenberg;40;43;average;average;4;4
+13/04/2018;Apr;Fish Hoek;28;25;above average;above average;5;5
+13/04/2018;Apr;Hout Bay West ;33;32;average;average;4;4
+13/04/2018;Apr;Hout Bay East;34;33;average;average;4;4
+17/04/2018;Apr;Hout Bay East;37;42;average;average;4;4
+17/04/2018;Apr;Fish Hoek;33;36;average;average;4;4
+17/04/2018;Apr;Muizenberg;38;41;very low;average ;2;4
+20/04/2018;Apr;Hout Bay East;38;40;average;average;4;4
+20/04/2018;Apr;Muizenberg;45;39;average;average;4;4
+20/04/2018;Apr;Fish Hoek;30;29;average;very low;4;2
+24/04/2018;Apr;Hout Bay East;30;30;average;average;4;4
+24/04/2018;Apr;Hout Bay West ;28;31;average;average;4;4
+24/04/2018;Apr;Fish Hoek;29;28;average;average;4;4
+27/04/2018;Apr;Hout Bay East;33;32;low;average;3;4
+27/04/2018;Apr;Hout Bay West ;34;30;low;average;3;4
+27/04/2018;Apr;Fish Hoek;28;30;above average;above average;5;5
