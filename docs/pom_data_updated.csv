@@ -1,0 +1,482 @@
+site;date;month;id;area;wet_weight;dry_weight;burned_weight;pom
+Fish Hoek;2/3/2018;Mar ;FH1;non_cleared;10.777;7.908;7.869;0.039
+Fish Hoek;2/3/2018;Mar ;FH10;cleared;10.196;8.051;7.931;0.12
+Fish Hoek;2/3/2018;Mar ;FH2;non_cleared;10.127;8.076;8.032;0.044
+Fish Hoek;2/3/2018;Mar ;FH3;non_cleared;10.43;10.018;9.807;0.211
+Fish Hoek;2/3/2018;Mar ;FH4;non_cleared;10.698;9.351;9.215;0.136
+Fish Hoek;2/3/2018;Mar ;FH5;non_cleared;10.185;9.227;7.873;1.354
+Fish Hoek;2/3/2018;Mar ;FH6;cleared;10.133;8.007;7.955;0.052
+Fish Hoek;2/3/2018;Mar ;FH7;cleared;10.937;8.822;8.696;0.126
+Fish Hoek;2/3/2018;Mar ;FH8;cleared;10.485;8.139;8.013;0.126
+Fish Hoek;2/3/2018;Mar ;FH9;cleared;10.979;8.816;7.793;1.023
+Hout Bay West;2/3/2018;Mar ;HBE10;cleared;10.627;9.613;9.441;0.172
+Hout Bay West;2/3/2018;Mar ;HBE9;cleared;10.037;8.977;8.807;0.17
+Hout Bay West;2/3/2018;Mar ;HBW1;non_cleared;10.577;8.408;8.287;0.121
+Hout Bay West;2/3/2018;Mar ;HBW2;non_cleared;10.453;9.433;7.072;2.361
+Hout Bay West;2/3/2018;Mar ;HBW3;non_cleared;10.179;9.122;8.854;0.268
+Hout Bay West;2/3/2018;Mar ;HBW4;non_cleared;10.815;9.726;9.58;0.146
+Hout Bay West;2/3/2018;Mar ;HBW5;non_cleared;10.293;9.127;8.684;0.443
+Hout Bay West;2/3/2018;Mar ;HBW6;cleared;10.848;7.65;7.146;0.504
+Hout Bay West;2/3/2018;Mar ;HBW7;cleared;10.402;7.273;6.947;0.326
+Hout Bay West;2/3/2018;Mar ;HBW8;cleared;10.538;7.359;6.96;0.399
+Strandfontein;2/3/2018;Mar ;SF1;non_cleared;10.608;8.299;8.216;0.083
+Strandfontein;2/3/2018;Mar ;SF10;cleared;10.565;10.263;10.221;0.042
+Strandfontein;2/3/2018;Mar ;SF2;non_cleared;10.858;9.338;9.287;0.051
+Strandfontein;2/3/2018;Mar ;SF3;non_cleared;10.743;9.062;9.02;0.042
+Strandfontein;2/3/2018;Mar ;SF4;non_cleared;10.701;9.69;9.565;0.125
+Strandfontein;2/3/2018;Mar ;SF5;non_cleared;10.063;8.714;8.696;0.018
+Strandfontein;2/3/2018;Mar ;SF6;cleared;10.785;8.977;8.689;0.288
+Strandfontein;2/3/2018;Mar ;SF7;cleared;10.198;9.188;9.164;0.024
+Strandfontein;2/3/2018;Mar ;SF8;cleared;10.721;10.211;9.333;0.878
+Strandfontein;2/3/2018;Mar ;SF9;cleared;10.641;9.997;9.973;0.024
+Fish Hoek;4/4/2018;Apr;FH1;non_cleared;10.573;7.526;7.482;0.044
+Fish Hoek;4/4/2018;Apr;FH10;cleared;10.051;8.244;7.861;0.383
+Fish Hoek;4/4/2018;Apr;FH2;non_cleared;10.127;8.076;8.032;0.044
+Fish Hoek;4/4/2018;Apr;FH3;non_cleared;10.584;8.55;8.423;0.127
+Fish Hoek;4/4/2018;Apr;FH4;non_cleared;10.512;9.789;9.788;0.001
+Fish Hoek;4/4/2018;Apr;FH5;non_cleared;10.441;9.53;9.488;0.042
+Fish Hoek;4/4/2018;Apr;FH6;cleared;10.777;7.908;7.869;0.039
+Fish Hoek;4/4/2018;Apr;FH7;cleared;10.712;9.12;8.013;1.107
+Fish Hoek;4/4/2018;Apr;FH8;cleared;10.355;7.97;7.919;0.051
+Fish Hoek;4/4/2018;Apr;FH9;cleared;10.617;8.052;7.841;0.211
+Hout Bay East;4/4/2018;Apr;HBE1;non_cleared;10.584;9.822;9.678;0.144
+Hout Bay East;4/4/2018;Apr;HBE10;cleared;10.5;10.225;9.899;0.326
+Hout Bay East;4/4/2018;Apr;HBE2;non_cleared;10.713;10.141;10.084;0.057
+Hout Bay East;4/4/2018;Apr;HBE3;non_cleared;10.882;9.387;9.086;0.301
+Hout Bay East;4/4/2018;Apr;HBE4;non_cleared;10.694;10.311;10.229;0.082
+Hout Bay East;4/4/2018;Apr;HBE5;non_cleared;10.505;10.38;10.263;0.117
+Hout Bay East;4/4/2018;Apr;HBE6;cleared;10.108;8.932;8.203;0.729
+Hout Bay East;4/4/2018;Apr;HBE7;cleared;10.562;10.001;9.735;0.266
+Hout Bay East;4/4/2018;Apr;HBE8;cleared;10.765;9.764;9.586;0.178
+Hout Bay East;4/4/2018;Apr;HBE9;cleared;10.786;10.683;10.387;0.296
+Muizenberg;4/4/2018;Apr;M1;non_cleared;10.19;9.597;9.414;0.183
+Muizenberg;4/4/2018;Apr;M10;cleared;10.732;10.546;10.448;0.098
+Muizenberg;4/4/2018;Apr;M2;non_cleared;10.559;9.977;9.552;0.425
+Muizenberg;4/4/2018;Apr;M3;non_cleared;10.539;10.011;9.858;0.153
+Muizenberg;4/4/2018;Apr;M4;non_cleared;10.526;9.849;9.817;0.032
+Muizenberg;4/4/2018;Apr;M5;non_cleared;10.491;10.264;9.698;0.566
+Muizenberg;4/4/2018;Apr;M6;cleared;10.541;9.808;9.754;0.054
+Muizenberg;4/4/2018;Apr;M7;cleared;10.889;10.404;10.4;0.004
+Muizenberg;4/4/2018;Apr;M8;cleared;10.236;9.707;9.537;0.17
+Muizenberg;4/4/2018;Apr;M9;cleared;10.221;9.906;8.883;1.023
+Fish Hoek;6/4/2018;Apr;FH1;non_cleared;10.05;8.122;8.06;0.062
+Fish Hoek;6/4/2018;Apr;FH10;cleared;10.654;7.865;7.644;0.221
+Fish Hoek;6/4/2018;Apr;FH2;non_cleared;10.788;6.335;6.334;0.001
+Fish Hoek;6/4/2018;Apr;FH3;non_cleared;10.381;8.544;8.463;0.081
+Fish Hoek;6/4/2018;Apr;FH4;cleared;10.295;9.949;9.684;0.265
+Fish Hoek;6/4/2018;Apr;FH5;non_cleared;10.19;9.737;9.461;0.276
+Fish Hoek;6/4/2018;Apr;FH6;cleared;10.106;7.047;6.751;0.296
+Fish Hoek;6/4/2018;Apr;FH7;cleared;10.906;8.26;8.075;0.185
+Fish Hoek;6/4/2018;Apr;FH8;cleared;10.503;9.258;9.236;0.022
+Fish Hoek;6/4/2018;Apr;FH9;cleared;10.747;10.058;10.006;0.052
+Hout Bay East;6/4/2018;Apr;HBE1;cleared;10.873;9.229;9.051;0.178
+Hout Bay East;6/4/2018;Apr;HBE10;cleared;10.27;9.497;8.942;0.555
+Hout Bay East;6/4/2018;Apr;HBE2;non_cleared;10.545;8.415;8.027;0.388
+Hout Bay East;6/4/2018;Apr;HBE3;non_cleared;10.063;10.003;9.572;0.431
+Hout Bay East;6/4/2018;Apr;HBE4;non_cleared;10.107;9.715;9.525;0.19
+Hout Bay East;6/4/2018;Apr;HBE5;non_cleared;10.687;9.894;9.036;0.858
+Hout Bay East;6/4/2018;Apr;HBE6;cleared;10.565;9.531;9.236;0.295
+Hout Bay East;6/4/2018;Apr;HBE7;cleared;10.365;9.435;9.223;0.212
+Hout Bay East;6/4/2018;Apr;HBE8;cleared;10.581;9.949;9.447;0.502
+Hout Bay East;6/4/2018;Apr;HBE9;cleared;10.281;9.491;9.349;0.142
+Hout Bay West;6/4/2018;Apr;HBW1;non_cleared;10.347;6.715;6.107;0.608
+Hout Bay West;6/4/2018;Apr;HBW10;cleared;10.375;9.716;9.411;0.305
+Hout Bay West;6/4/2018;Apr;HBW2;non_cleared;10.347;6.715;6.107;0.608
+Hout Bay West;6/4/2018;Apr;HBW3;non_cleared;10.418;9.406;9.205;0.201
+Hout Bay West;6/4/2018;Apr;HBW4;non_cleared;10.864;9.779;9.426;0.353
+Hout Bay West;6/4/2018;Apr;HBW5;non_cleared;10.017;9.176;8.91;0.266
+Hout Bay West;6/4/2018;Apr;HBW6;cleared;10.15;8.707;8.201;0.506
+Hout Bay West;6/4/2018;Apr;HBW7;cleared;10.529;9.403;9.164;0.239
+Hout Bay West;6/4/2018;Apr;HBW8;cleared;10.407;9.076;8.988;0.088
+Hout Bay West;6/4/2018;Apr;HBW9;cleared;10.082;9.145;8.814;0.331
+Hout Bay East;12/4/2018;Apr;HBE1;cleared;10.137;9.315;9.201;0.114
+Hout Bay East;12/4/2018;Apr;HBE10;cleared;10.224;9.284;9.067;0.217
+Hout Bay East;12/4/2018;Apr;HBE2;non_cleared;10.171;7.481;7.34;0.141
+Hout Bay East;12/4/2018;Apr;HBE3;non_cleared;10.408;9.806;9.594;0.212
+Hout Bay East;12/4/2018;Apr;HBE4;non_cleared;10.012;10.002;9.777;0.225
+Hout Bay East;12/4/2018;Apr;HBE5;non_cleared;10.105;10.04;9.856;0.184
+Hout Bay East;12/4/2018;Apr;HBE6;cleared;10.528;9.013;8.862;0.151
+Hout Bay East;12/4/2018;Apr;HBE7;cleared;10.485;8.846;8.7;0.146
+Hout Bay East;12/4/2018;Apr;HBE8;cleared;10.095;9.625;9.234;0.391
+Hout Bay East;12/4/2018;Apr;HBE9;cleared;10.558;9.95;9.55;0.4
+Hout Bay West;12/4/2018;Apr;HBW1;non_cleared;10.191;7.337;6.582;0.755
+Hout Bay West;12/4/2018;Apr;HBW10;cleared;10.418;10.126;9.647;0.479
+Hout Bay West;12/4/2018;Apr;HBW2;non_cleared;10.143;8.189;7.784;0.405
+Hout Bay West;12/4/2018;Apr;HBW3;non_cleared;10.686;10.06;9.762;0.298
+Hout Bay West;12/4/2018;Apr;HBW4;non_cleared;10.381;10.332;9.717;0.615
+Hout Bay West;12/4/2018;Apr;HBW5;non_cleared;10.842;10.674;10.527;0.147
+Hout Bay West;12/4/2018;Apr;HBW6;cleared;10.293;9.127;8.684;0.443
+Hout Bay West;12/4/2018;Apr;HBW7;cleared;10.577;8.408;8.287;0.121
+Hout Bay West;12/4/2018;Apr;HBW8;cleared;10.291;9.373;8.911;0.462
+Hout Bay West;12/4/2018;Apr;HBW9;cleared;10.268;9.231;8.835;0.396
+Muizenberg;12/4/2018;Apr;M1;non_cleared;10.3;7.701;7.68;0.021
+Muizenberg;12/4/2018;Apr;M10;cleared;10.304;10.304;9.735;0.569
+Muizenberg;12/4/2018;Apr;M2;non_cleared;10.327;9.801;9.678;0.123
+Muizenberg;12/4/2018;Apr;M3;non_cleared;10.005;9.715;9.444;0.271
+Muizenberg;12/4/2018;Apr;M4;cleared;10.648;8.368;8.328;0.04
+Muizenberg;12/4/2018;Apr;M5;cleared;10.107;9.357;9.001;0.356
+Muizenberg;12/4/2018;Apr;M6;cleared;10.453;9.433;7.072;2.361
+Muizenberg;12/4/2018;Apr;M7;cleared;10.65;10.057;9.495;0.562
+Muizenberg;12/4/2018;Apr;M8;cleared;10.745;9.202;8.797;0.405
+Muizenberg;12/4/2018;Apr;M9;cleared;10.351;10.051;9.681;0.37
+Fish Hoek;13/4/2018;Apr;FH1;non_cleared;10.389;8.676;6.736;1.94
+Fish Hoek;13/4/2018;Apr;FH10;cleared;10.583;9.481;8.641;0.84
+Fish Hoek;13/4/2018;Apr;FH2;non_cleared;10.171;9.999;8.436;1.563
+Fish Hoek;13/4/2018;Apr;FH3;non_cleared;10.4;9.304;9.206;0.098
+Fish Hoek;13/4/2018;Apr;FH4;non_cleared;10.139;9.686;9.618;0.068
+Fish Hoek;13/4/2018;Apr;FH5;non_cleared;10.101;9.998;8.999;0.999
+Fish Hoek;13/4/2018;Apr;FH6;cleared;10.055;8.663;7.881;0.782
+Fish Hoek;13/4/2018;Apr;FH7;cleared;10.673;7.212;7.126;0.086
+Fish Hoek;13/4/2018;Apr;FH8;cleared;10.246;7.803;7.638;0.165
+Fish Hoek;13/4/2018;Apr;FH9;cleared;10.699;8.286;8.224;0.062
+Hout Bay East;13/4/2018;Apr;HBE1;non_cleared;10.603;8.007;7.897;0.11
+Hout Bay East;13/4/2018;Apr;HBE10;cleared;10.371;9.697;8.686;1.011
+Hout Bay East;13/4/2018;Apr;HBE2;non_cleared;10.529;10.272;9.537;0.735
+Hout Bay East;13/4/2018;Apr;HBE3;non_cleared;10.355;12.426;12.321;0.105
+Hout Bay East;13/4/2018;Apr;HBE4;non_cleared;10.06;8.443;8.04;0.403
+Hout Bay East;13/4/2018;Apr;HBE5;non_cleared;10.256;10.051;9.987;0.064
+Hout Bay East;13/4/2018;Apr;HBE6;non_cleared;10.3;9.252;9.004;0.248
+Hout Bay East;13/4/2018;Apr;HBE7;cleared;10.652;8.904;8.836;0.068
+Hout Bay East;13/4/2018;Apr;HBE8;cleared;10.602;10.239;10.065;0.174
+Hout Bay East;13/4/2018;Apr;HBE9;cleared;10.102;10.001;9.818;0.183
+Hout Bay West;13/4/2018;Apr;HBW1;non_cleared;10.337;7.333;7.125;0.208
+Hout Bay West;13/4/2018;Apr;HBW10;cleared;10.395;10.301;9.863;0.438
+Hout Bay West;13/4/2018;Apr;HBW2;non_cleared;10.557;8.785;8.532;0.253
+Hout Bay West;13/4/2018;Apr;HBW3;cleared;10.212;9.766;9.609;0.157
+Hout Bay West;13/4/2018;Apr;HBW4;non_cleared;10.388;10.088;10.078;0.01
+Hout Bay West;13/4/2018;Apr;HBW5;non_cleared;10.163;9.218;9.143;0.075
+Hout Bay West;13/4/2018;Apr;HBW6;cleared;10.117;5.912;4.985;0.927
+Hout Bay West;13/4/2018;Apr;HBW7;cleared;10.024;7.917;7.276;0.641
+Hout Bay West;13/4/2018;Apr;HBW8;cleared;10.46;7.136;7.07;0.066
+Hout Bay West;13/4/2018;Apr;HBW9;cleared;10.386;8.939;8.441;0.498
+Fish Hoek;14/3/2018;Mar ;FH1;non_cleared;10.389;8.676;6.736;1.94
+Fish Hoek;14/3/2018;Mar ;FH10;cleared;10.67;9.518;9.354;0.164
+Fish Hoek;14/3/2018;Mar ;FH2;non_cleared;10.311;8.277;8.244;0.033
+Fish Hoek;14/3/2018;Mar ;FH3;non_cleared;10.622;9.245;9.23;0.015
+Fish Hoek;14/3/2018;Mar ;FH4;non_cleared;10.678;10.844;10.839;0.005
+Fish Hoek;14/3/2018;Mar ;FH5;non_cleared;10.858;10.461;10.441;0.02
+Fish Hoek;14/3/2018;Mar ;FH6;cleared;10.59;7.773;7.696;0.077
+Fish Hoek;14/3/2018;Mar ;FH7;cleared;10.362;8.003;7.996;0.007
+Fish Hoek;14/3/2018;Mar ;FH8;cleared;10.445;8.052;7.953;0.099
+Fish Hoek;14/3/2018;Mar ;FH9;cleared;10.354;8.529;8.238;0.291
+Hout Bay West;14/3/2018;Mar ;HBW1;non_cleared;10.398;9.188;9.012;0.176
+Hout Bay West;14/3/2018;Mar ;HBW10;cleared;10.472;8.711;8.47;0.241
+Hout Bay West;14/3/2018;Mar ;HBW2;non_cleared;10.476;7.556;6.136;1.42
+Hout Bay West;14/3/2018;Mar ;HBW3;non_cleared;10.664;9.942;9.642;0.3
+Hout Bay West;14/3/2018;Mar ;HBW4;non_cleared;10.63;9.934;9.808;0.126
+Hout Bay West;14/3/2018;Mar ;HBW5;non_cleared;10.148;9.654;9.429;0.225
+Hout Bay West;14/3/2018;Mar ;HBW6;cleared;10.724;7.987;7.065;0.922
+Hout Bay West;14/3/2018;Mar ;HBW7;cleared;10.708;8.982;8.411;0.571
+Hout Bay West;14/3/2018;Mar ;HBW8;cleared;10.66;9.301;8.903;0.398
+Hout Bay West;14/3/2018;Mar ;HBW9;cleared;10.872;9.727;9.293;0.434
+Muizenberg;14/3/2018;Mar ;M1;non_cleared;10.47;9.958;9.836;0.122
+Muizenberg;14/3/2018;Mar ;M10;cleared;10.303;10.158;10.038;0.12
+Muizenberg;14/3/2018;Mar ;M2;non_cleared;10.674;9.613;9.594;0.019
+Muizenberg;14/3/2018;Mar ;M3;non_cleared;10.183;10.333;10.311;0.022
+Muizenberg;14/3/2018;Mar ;M4;non_cleared;10.474;10.362;10.311;0.051
+Muizenberg;14/3/2018;Mar ;M5;non_cleared;10.425;10.106;9.992;0.114
+Muizenberg;14/3/2018;Mar ;M6;cleared;10.66;9.977;9.881;0.096
+Muizenberg;14/3/2018;Mar ;M7;cleared;10.823;9.265;9.176;0.089
+Muizenberg;14/3/2018;Mar ;M8;cleared;10.512;10.033;10.01;0.023
+Muizenberg;14/3/2018;Mar ;M9;cleared;10.366;10.015;10.009;0.006
+Fish Hoek;16/3/2018;Mar ;FH1;non_cleared;10.402;7.273;6.947;0.326
+Fish Hoek;16/3/2018;Mar ;FH10;cleared;10.597;9.898;9.792;0.106
+Fish Hoek;16/3/2018;Mar ;FH2;non_cleared;10.713;9.27;9.215;0.055
+Fish Hoek;16/3/2018;Mar ;FH3;non_cleared;10.733;8.339;8.211;0.128
+Fish Hoek;16/3/2018;Mar ;FH4;non_cleared;10.085;7.738;6.378;1.36
+Fish Hoek;16/3/2018;Mar ;FH5;non_cleared;10.413;9.703;9.666;0.037
+Fish Hoek;16/3/2018;Mar ;FH6;cleared;10.562;7.586;7.535;0.051
+Fish Hoek;16/3/2018;Mar ;FH7;cleared;10.324;9.648;9.612;0.036
+Fish Hoek;16/3/2018;Mar ;FH8;cleared;10.857;8.474;7.192;1.282
+Fish Hoek;16/3/2018;Mar ;FH9;cleared;10.085;7.738;6.378;1.36
+Hout Bay East;16/3/2018;Mar ;HBE1;non_cleared;10.402;7.273;6.947;0.326
+Hout Bay East;16/3/2018;Mar ;HBE10;cleared;10.145;9.374;9.242;0.132
+Hout Bay East;16/3/2018;Mar ;HBE2;non_cleared;10.593;10.26;10.245;0.015
+Hout Bay East;16/3/2018;Mar ;HBE3;non_cleared;10.03;9.688;9.408;0.28
+Hout Bay East;16/3/2018;Mar ;HBE4;non_cleared;10.593;9.928;9.826;0.102
+Hout Bay East;16/3/2018;Mar ;HBE5;non_cleared;10.623;10.595;10.318;0.277
+Hout Bay East;16/3/2018;Mar ;HBE6;cleared;10.816;9.432;9.335;0.097
+Hout Bay East;16/3/2018;Mar ;HBE7;cleared;10.179;9.122;8.854;0.268
+Hout Bay East;16/3/2018;Mar ;HBE8;cleared;10.965;10.146;10.136;0.01
+Hout Bay East;16/3/2018;Mar ;HBE9;cleared;10.343;8.988;8.488;0.5
+Hout Bay West;16/3/2018;Mar ;HBW10;cleared;10.421;8.084;8.035;0.049
+Hout Bay West;16/3/2018;Mar ;HBW10;cleared;10.207;9.559;9.357;0.202
+Hout Bay West;16/3/2018;Mar ;HBW2;non_cleared;10.379;7.53;7.298;0.232
+Hout Bay West;16/3/2018;Mar ;HBW3;non_cleared;10.252;7.411;6.877;0.534
+Hout Bay West;16/3/2018;Mar ;HBW4;non_cleared;10.438;9.856;9.503;0.353
+Hout Bay West;16/3/2018;Mar ;HBW5;non_cleared;10.345;9.73;9.519;0.211
+Hout Bay West;16/3/2018;Mar ;HBW6;cleared;10.004;7.429;7.204;0.225
+Hout Bay West;16/3/2018;Mar ;HBW7;cleared;10.646;7.348;6.909;0.439
+Hout Bay West;16/3/2018;Mar ;HBW8;cleared;10.443;7.778;7.676;0.102
+Hout Bay West;16/3/2018;Mar ;HBW9;cleared;10.437;8.159;8.012;0.147
+Fish Hoek;17/4/2018;Apr;FH1;non_cleared;10.768;7.844;7.719;0.125
+Fish Hoek;17/4/2018;Apr;FH10;cleared;10.449;8.326;8.211;0.115
+Fish Hoek;17/4/2018;Apr;FH2;non_cleared;10.28;7.922;7.783;0.139
+Fish Hoek;17/4/2018;Apr;FH3;non_cleared;10.089;8.299;8.154;0.145
+Fish Hoek;17/4/2018;Apr;FH4;non_cleared;10.518;8.243;8.166;0.077
+Fish Hoek;17/4/2018;Apr;FH5;non_cleared;10.059;9.381;8.262;1.119
+Fish Hoek;17/4/2018;Apr;FH6;cleared;10.342;8.024;7.856;0.168
+Fish Hoek;17/4/2018;Apr;FH7;cleared;10.9;8.439;8.282;0.157
+Fish Hoek;17/4/2018;Apr;FH8;cleared;10.451;8.317;8.175;0.142
+Fish Hoek;17/4/2018;Apr;FH9;cleared;10.657;8.298;7.261;1.037
+Hout Bay East;17/4/2018;Apr;HBE1;non_cleared;10.311;9.032;8.781;0.251
+Hout Bay East;17/4/2018;Apr;HBE10;cleared;10.556;10.469;10.026;0.443
+Hout Bay East;17/4/2018;Apr;HBE2;non_cleared;10.65;9.622;9.426;0.196
+Hout Bay East;17/4/2018;Apr;HBE3;cleared;10.377;9.554;9.271;0.283
+Hout Bay East;17/4/2018;Apr;HBE4;non_cleared;10.543;10.081;9.856;0.225
+Hout Bay East;17/4/2018;Apr;HBE5;non_cleared;10.716;10.6;10.374;0.226
+Hout Bay East;17/4/2018;Apr;HBE6;cleared;10.885;8.178;8.141;0.037
+Hout Bay East;17/4/2018;Apr;HBE7;non_cleared;10.791;10.626;9.699;0.927
+Hout Bay East;17/4/2018;Apr;HBE8;cleared;10.124;9.475;8.999;0.476
+Hout Bay East;17/4/2018;Apr;HBE9;cleared;10.186;9.817;9.685;0.132
+Muizenberg;17/4/2018;Apr;M1;non_cleared;10.992;10.413;10.341;0.072
+Muizenberg;17/4/2018;Apr;M10;cleared;10.343;9.882;9.726;0.156
+Muizenberg;17/4/2018;Apr;M2;non_cleared;10.648;10.008;9.955;0.053
+Muizenberg;17/4/2018;Apr;M3;non_cleared;10.738;9.955;8.231;1.724
+Muizenberg;17/4/2018;Apr;M4;non_cleared;10.626;10.443;6.821;3.622
+Muizenberg;17/4/2018;Apr;M5;non_cleared;10.928;10.551;9.485;1.066
+Muizenberg;17/4/2018;Apr;M6;cleared;10.284;9.487;9.307;0.18
+Muizenberg;17/4/2018;Apr;M7;cleared;10.219;9.707;8.645;1.062
+Muizenberg;17/4/2018;Apr;M8;cleared;10.593;10.036;9.839;0.197
+Muizenberg;17/4/2018;Apr;M9;cleared;10.397;9.901;9.658;0.243
+Muizenberg;20/3/018;Mar ;M1;non_cleared;10.766;8.538;8.431;0.107
+Fish Hoek;20/3/2018;Mar ;FH1;non_cleared;10.197;7.892;7.779;0.113
+Fish Hoek;20/3/2018;Mar ;FH10;cleared;10.377;8;7.843;0.157
+Fish Hoek;20/3/2018;Mar ;FH2;non_cleared;10.352;7.977;7.838;0.139
+Fish Hoek;20/3/2018;Mar ;FH3;non_cleared;10.462;8.16;8.018;0.142
+Fish Hoek;20/3/2018;Mar ;FH4;non_cleared;10.374;7.836;7.82;0.016
+Fish Hoek;20/3/2018;Mar ;FH5;non_cleared;10.332;9.551;9.541;0.01
+Fish Hoek;20/3/2018;Mar ;FH6;cleared;10.458;7.096;7.049;0.047
+Fish Hoek;20/3/2018;Mar ;FH7;cleared;10.509;7.228;6.764;0.464
+Fish Hoek;20/3/2018;Mar ;FH8;cleared;10.674;8.011;7.928;0.083
+Fish Hoek;20/3/2018;Mar ;FH9;non_cleared;10.801;8.356;8.278;0.078
+Hout Bay East;20/3/2018;Mar ;HBE1;non_cleared;10.028;8.078;8.052;0.026
+Hout Bay East;20/3/2018;Mar ;HBE10;cleared;10.701;10.405;10.39;0.015
+Hout Bay East;20/3/2018;Mar ;HBE2;non_cleared;10.67;9.836;9.653;0.183
+Hout Bay East;20/3/2018;Mar ;HBE3;non_cleared;10.23;10.05;9.864;0.186
+Hout Bay East;20/3/2018;Mar ;HBE4;non_cleared;10.356;10.072;9.948;0.124
+Hout Bay East;20/3/2018;Mar ;HBE5;non_cleared;10.449;10.301;10.237;0.064
+Hout Bay East;20/3/2018;Mar ;HBE6;cleared;10.712;8.476;8.33;0.146
+Hout Bay East;20/3/2018;Mar ;HBE7;cleared;10.356;8.539;8.365;0.174
+Hout Bay East;20/3/2018;Mar ;HBE8;non_cleared;10.741;10.124;10.047;0.077
+Hout Bay East;20/3/2018;Mar ;HBE9;cleared;10.584;8.821;8.497;0.324
+Muizenberg;20/3/2018;Mar ;M1;non_cleared;10.383;10.298;9.782;0.516
+Muizenberg;20/3/2018;Mar ;M10;cleared;10.082;9.847;9.828;0.019
+Muizenberg;20/3/2018;Mar ;M2;non_cleared;10.503;9.841;9.673;0.168
+Muizenberg;20/3/2018;Mar ;M3;non_cleared;10.512;9.936;9.844;0.092
+Muizenberg;20/3/2018;Mar ;M4;non_cleared;10.13;10.085;10.075;0.01
+Muizenberg;20/3/2018;Mar ;M5;non_cleared;10.523;10.848;10.471;0.377
+Muizenberg;20/3/2018;Mar ;M6;cleared;10.737;9.504;9.485;0.019
+Muizenberg;20/3/2018;Mar ;M7;cleared;10.387;9.313;9.255;0.058
+Muizenberg;20/3/2018;Mar ;M7;cleared;10.387;9.313;9.255;0.058
+Muizenberg;20/3/2018;Mar ;M9;cleared;10.757;10.363;10.349;0.014
+Fish Hoek;20/4/2018;Apr;FH1;non_cleared;10.155;6.721;6.26;0.461
+Fish Hoek;20/4/2018;Apr;FH10;cleared;10.335;8.127;8.086;0.041
+Fish Hoek;20/4/2018;Apr;FH2;non_cleared;10.058;7.58;6.927;0.653
+Fish Hoek;20/4/2018;Apr;FH3;non_cleared;10.36;10.26;9.732;0.528
+Fish Hoek;20/4/2018;Apr;FH4;non_cleared;10.712;9.958;9.911;0.047
+Fish Hoek;20/4/2018;Apr;FH5;non_cleared;10.566;7.085;6.899;0.186
+Fish Hoek;20/4/2018;Apr;FH6;cleared;10.347;7.829;7.28;0.549
+Fish Hoek;20/4/2018;Apr;FH7;cleared;10.522;8.244;7.245;0.999
+Fish Hoek;20/4/2018;Apr;FH8;cleared;10.282;7.89;7.827;0.063
+Fish Hoek;20/4/2018;Apr;FH9;cleared;10.733;8.426;7.898;0.528
+Hout Bay East;20/4/2018;Apr;HBE1;non_cleared;10.509;10.504;10.073;0.431
+Hout Bay East;20/4/2018;Apr;HBE10;non_cleared;10.436;9.874;7.804;2.07
+Hout Bay East;20/4/2018;Apr;HBE2;cleared;10.059;8.06;7.983;0.077
+Hout Bay East;20/4/2018;Apr;HBE3;cleared;10.652;9.781;9.063;0.718
+Hout Bay East;20/4/2018;Apr;HBE4;cleared;10.696;7.679;7.235;0.444
+Hout Bay East;20/4/2018;Apr;HBE5;non_cleared;10.45;10.152;9.419;0.733
+Hout Bay East;20/4/2018;Apr;HBE6;cleared;10.62;7.974;7.562;0.412
+Hout Bay East;20/4/2018;Apr;HBE7;cleared;10.262;9.515;9.442;0.073
+Hout Bay East;20/4/2018;Apr;HBE8;cleared;10.774;10.106;9.992;0.114
+Hout Bay East;20/4/2018;Apr;HBE9;cleared;10.022;9.295;9.133;0.162
+Muizenberg;20/4/2018;Apr;M1;non_cleared;10.383;10.298;9.782;0.516
+Muizenberg;20/4/2018;Apr;M10;cleared;10.421;10.038;9.883;0.155
+Muizenberg;20/4/2018;Apr;M2;non_cleared;10.347;10.47;8.5;1.97
+Muizenberg;20/4/2018;Apr;M3;non_cleared;10.282;9.916;9.289;0.627
+Muizenberg;20/4/2018;Apr;M4;non_cleared;10.34;10.025;9.963;0.062
+Muizenberg;20/4/2018;Apr;M5;non_cleared;10.2;8.401;8.144;0.257
+Muizenberg;20/4/2018;Apr;M6;cleared;10.469;9.179;9.088;0.091
+Muizenberg;20/4/2018;Apr;M7;cleared;10.224;10.201;9.475;0.726
+Muizenberg;20/4/2018;Apr;M8;cleared;10.687;8.068;7.938;0.13
+Muizenberg;20/4/2018;Apr;M9;cleared;10.875;8.906;8.866;0.04
+Fish Hoek;23/3/2018;Mar ;FH1;non_cleared;10.103;7.704;7.494;0.21
+Fish Hoek;23/3/2018;Mar ;FH2;non_cleared;10.036;7.554;7.031;0.523
+Fish Hoek;23/3/2018;Mar ;FH6;non_cleared;10.903;10.09;9.986;0.104
+Fish Hoek;23/3/2018;Mar ;FH10;cleared;10.302;9.269;9.154;0.115
+Fish Hoek;23/3/2018;Mar ;FH3;non_cleared;10.779;9.077;9.063;0.014
+Fish Hoek;23/3/2018;Mar ;FH4;non_cleared;10.145;8.995;8.888;0.107
+Fish Hoek;23/3/2018;Mar ;FH5;non_cleared;10.398;9.934;9.932;0.002
+Fish Hoek;23/3/2018;Mar ;FH7;cleared;10.925;8.498;6.44;2.058
+Fish Hoek;23/3/2018;Mar ;FH8;cleared;10.838;7.785;7.704;0.081
+Fish Hoek;23/3/2018;Mar ;FH9;cleared;10.449;7.238;6.657;0.581
+Hout Bay East;23/3/2018;Mar ;HBE1;non_cleared;10.378;8.011;7.384;0.627
+Hout Bay East;23/3/2018;Mar ;HBE10;cleared;10.731;10.145;9.998;0.147
+Hout Bay East;23/3/2018;Mar ;HBE2;non_cleared;10.9;8.712;8.655;0.057
+Hout Bay East;23/3/2018;Mar ;HBE3;non_cleared;10.002;8.192;8.139;0.053
+Hout Bay East;23/3/2018;Mar ;HBE4;non_cleared;10.056;9.148;8.805;0.343
+Hout Bay East;23/3/2018;Mar ;HBE5;non_cleared;10.538;9.672;9.482;0.19
+Hout Bay East;23/3/2018;Mar ;HBE6;cleared;10.655;8.508;7.929;0.579
+Hout Bay East;23/3/2018;Mar ;HBE8;cleared;10.481;9.285;8.058;1.227
+Hout Bay East;23/3/2018;Mar ;HBE8;cleared;10.252;9.408;9.128;0.28
+Hout Bay East;23/3/2018;Mar ;HBE9;cleared;10.448;9.631;9.445;0.186
+Muizenberg;23/3/2018;Mar ;M1;non_cleared;10.723;9.78;9.746;0.034
+Muizenberg;23/3/2018;Mar ;M10;cleared;10.826;10.625;7.029;3.596
+Muizenberg;23/3/2018;Mar ;M2;non_cleared;10.221;9.615;9.554;0.061
+Muizenberg;23/3/2018;Mar ;M3;non_cleared;10.315;9.942;9.909;0.033
+Muizenberg;23/3/2018;Mar ;M4;non_cleared;10.525;10.101;10.044;0.057
+Muizenberg;23/3/2018;Mar ;M5;non_cleared;10.376;8.225;8.112;0.113
+Muizenberg;23/3/2018;Mar ;M6;cleared;10.55;10.233;10.218;0.015
+Muizenberg;23/3/2018;Mar ;M7;cleared;10.098;10.47;10.018;0.452
+Muizenberg;23/3/2018;Mar ;M8;cleared;10.639;10.179;10.173;0.006
+Muizenberg;23/3/2018;Mar ;M9;cleared;10.373;9.629;9.603;0.026
+Fish Hoek;24/4/2018;Apr;FH1;non_cleared;10.561;8.319;8.245;0.074
+Fish Hoek;24/4/2018;Apr;FH10;cleared;10.501;8.241;8.175;0.066
+Fish Hoek;24/4/2018;Apr;FH2;non_cleared;10.925;8.498;6.44;2.058
+Fish Hoek;24/4/2018;Apr;FH3;non_cleared;10.592;8.389;8.309;0.08
+Fish Hoek;24/4/2018;Apr;FH4;non_cleared;10.231;8.306;8.192;0.114
+Fish Hoek;24/4/2018;Apr;FH5;non_cleared;10.761;9.985;9.896;0.089
+Fish Hoek;24/4/2018;Apr;FH6;cleared;10.838;7.785;7.704;0.081
+Fish Hoek;24/4/2018;Apr;FH7;cleared;10.748;7.946;7.839;0.107
+Fish Hoek;24/4/2018;Apr;FH8;cleared;10.487;9.944;9.425;0.519
+Fish Hoek;24/4/2018;Apr;FH9;non_cleared;10.689;10.126;9.795;0.331
+Hout Bay East;24/4/2018;Apr;HBE1;non_cleared;10.663;9.636;9.538;0.098
+Hout Bay East;24/4/2018;Apr;HBE10;cleared;10.363;10.002;9.526;0.476
+Hout Bay East;24/4/2018;Apr;HBE2;non_cleared;10.88;10.142;9.902;0.24
+Hout Bay East;24/4/2018;Apr;HBE3;non_cleared;10.384;9.497;9.386;0.111
+Hout Bay East;24/4/2018;Apr;HBE4;non_cleared;10.486;9.423;9.294;0.129
+Hout Bay East;24/4/2018;Apr;HBE5;non_cleared;10.846;10.136;9.294;0.842
+Hout Bay East;24/4/2018;Apr;HBE6;cleared;10.888;9.741;9.381;0.36
+Hout Bay East;24/4/2018;Apr;HBE7;cleared;10.115;9.332;9.225;0.107
+Hout Bay East;24/4/2018;Apr;HBE8;cleared;10.253;9.538;9.416;0.122
+Hout Bay East;24/4/2018;Apr;HBE9;cleared;10.207;9.555;9.045;0.51
+Hout Bay West;24/4/2018;Apr;HBW1;non_cleared;10.435;9.398;9.202;0.196
+Hout Bay West;24/4/2018;Apr;HBW10;cleared;10.424;9.581;9.393;0.188
+Hout Bay West;24/4/2018;Apr;HBW2;non_cleared;10.525;9.6;9.434;0.166
+Hout Bay West;24/4/2018;Apr;HBW3;non_cleared;10.805;9.917;9.755;0.162
+Hout Bay West;24/4/2018;Apr;HBW4;cleared;10.387;9.627;9.034;0.593
+Hout Bay West;24/4/2018;Apr;HBW5;non_cleared;10.208;9.466;9.377;0.089
+Hout Bay West;24/4/2018;Apr;HBW6;cleared;10.535;6.526;6.241;0.285
+Hout Bay West;24/4/2018;Apr;HBW7;cleared;10.811;9.526;9.165;0.361
+Hout Bay West;24/4/2018;Apr;HBW8;cleared;10.098;8.964;8.603;0.361
+Hout Bay West;24/4/2018;Apr;HBW9;cleared;10.604;9.512;9.123;0.389
+Fish Hoek;25/2/2018;Feb ;FH1;non_cleared;10.117;9.745;8.366;1.379
+Fish Hoek;25/2/2018;Feb ;FH10;non_cleared;10.591;10.491;9.549;0.942
+Fish Hoek;25/2/2018;Feb ;FH2;non_cleared;10.195;10.127;10.012;0.115
+Fish Hoek;25/2/2018;Feb ;FH3;non_cleared;10.055;10.028;10.003;0.025
+Fish Hoek;25/2/2018;Feb ;FH4;non_cleared;10.303;10.205;10.12;0.085
+Fish Hoek;25/2/2018;Feb ;FH5;non_cleared;10.214;10.13;9.764;0.366
+Fish Hoek;25/2/2018;Feb ;FH6;cleared;10.07;7.681;7.101;0.58
+Fish Hoek;25/2/2018;Feb ;FH7;cleared;10.556;8.687;7.54;1.147
+Fish Hoek;25/2/2018;Feb ;FH8;cleared;10.509;9.601;8.999;0.602
+Fish Hoek;25/2/2018;Feb ;FH9;cleared;10.071;9.979;9.978;0.001
+Hout Bay East;25/2/2018;Feb ;HBE1;non_cleared;10.102;8.869;8.696;0.173
+Hout Bay East;25/2/2018;Feb ;HBE10;cleared;10.005;10.002;9.846;0.156
+Hout Bay East;25/2/2018;Feb ;HBE2;non_cleared;10.306;10.164;9.957;0.207
+Hout Bay East;25/2/2018;Feb ;HBE3;non_cleared;10.003;10.001;9.677;0.324
+Hout Bay East;25/2/2018;Feb ;HBE4;non_cleared;10.131;8.998;8.3;0.698
+Hout Bay East;25/2/2018;Feb ;HBE5;non_cleared;10.173;9.958;9.724;0.234
+Hout Bay East;25/2/2018;Feb ;HBE6;cleared;10.002;9.999;9.468;0.531
+Hout Bay East;25/2/2018;Feb ;HBE7;cleared;10;9.722;9.471;0.251
+Hout Bay East;25/2/2018;Feb ;HBE8;cleared;10.024;9.846;9.114;0.732
+Hout Bay East;25/2/2018;Feb ;HBE9;cleared;10.083;9.881;8.537;1.344
+Muizenberg;25/2/2018;Feb ;M1;non_cleared;10.294;9.025;8.913;0.112
+Muizenberg;25/2/2018;Feb ;M10;cleared;10.39;10.361;10.28;0.081
+Muizenberg;25/2/2018;Feb ;M2;non_cleared;10.178;9.93;9.855;0.075
+Muizenberg;25/2/2018;Feb ;M4;non_cleared;10.772;10.746;10.597;0.149
+Muizenberg;25/2/2018;Feb ;M5;non_cleared;10.708;9.997;9.896;0.101
+Muizenberg;25/2/2018;Feb ;M6;cleared;10.554;9.551;9.507;0.044
+Muizenberg;25/2/2018;Feb ;M7;cleared;10.206;9.984;9.972;0.012
+Muizenberg;25/2/2018;Feb ;M8;cleared;10.208;9.758;9.711;0.047
+Muizenberg;25/2/2018;Feb ;M9;cleared;10.044;9.834;9.761;0.073
+Muizenberg;25/3/2018;Mar ;M3;non_cleared;10.39;10.17;10.062;0.108
+Fish Hoek;27/4/2018;Apr;FH1;non_cleared;10.752;6.303;6.002;0.301
+Fish Hoek;27/4/2018;Apr;FH10;non_cleared;10.119;6.349;6.173;0.176
+Fish Hoek;27/4/2018;Apr;FH2;non_cleared;10.426;8.263;7.789;0.474
+Fish Hoek;27/4/2018;Apr;FH3;non_cleared;10.375;6.457;6.213;0.244
+Fish Hoek;27/4/2018;Apr;FH4;non_cleared;10.317;7.588;7.033;0.555
+Fish Hoek;27/4/2018;Apr;FH5;non_cleared;10.515;9.957;9.826;0.131
+Fish Hoek;27/4/2018;Apr;FH6;cleared;10.796;5.974;5.512;0.462
+Fish Hoek;27/4/2018;Apr;FH7;cleared;10.378;8.011;7.384;0.627
+Fish Hoek;27/4/2018;Apr;FH8;cleared;10.252;7.455;7.283;0.172
+Fish Hoek;27/4/2018;Apr;FH9;cleared;10.137;7.304;7.261;0.043
+Hout Bay East;27/4/2018;Apr;HBE1;non_cleared;10.913;9.026;8.692;0.334
+Hout Bay East;27/4/2018;Apr;HBE10;cleared;10.318;9.262;8.835;0.427
+Hout Bay East;27/4/2018;Apr;HBE2;non_cleared;10.103;7.152;7.1;0.052
+Hout Bay East;27/4/2018;Apr;HBE3;non_cleared;10.768;8.851;8.588;0.263
+Hout Bay East;27/4/2018;Apr;HBE4;non_cleared;10.324;8.78;6.108;2.672
+Hout Bay East;27/4/2018;Apr;HBE5;non_cleared;10.203;10.03;8.237;1.793
+Hout Bay East;27/4/2018;Apr;HBE6;cleared;10.339;6.597;5.858;0.739
+Hout Bay East;27/4/2018;Apr;HBE7;cleared;10.179;9.122;8.854;0.268
+Hout Bay East;27/4/2018;Apr;HBE8;cleared;10.776;7.619;7.225;0.394
+Hout Bay East;27/4/2018;Apr;HBE9;cleared;10.941;9.5;9.403;0.097
+Hout Bay West;27/4/2018;Apr;HBW1;non_cleared;10.388;10.269;9.787;0.482
+Hout Bay West;27/4/2018;Apr;HBW10;cleared;10.146;9.121;9.039;0.082
+Hout Bay West;27/4/2018;Apr;HBW2;non_cleared;10.568;7.491;7.31;0.181
+Hout Bay West;27/4/2018;Apr;HBW3;non_cleared;10.736;9.929;9.023;0.906
+Hout Bay West;27/4/2018;Apr;HBW4;non_cleared;10.651;8.456;8.365;0.091
+Hout Bay West;27/4/2018;Apr;HBW5;non_cleared;10.971;10.856;10.571;0.285
+Hout Bay West;27/4/2018;Apr;HBW6;cleared;10.358;9.584;8.843;0.741
+Hout Bay West;27/4/2018;Apr;HBW7;cleared;10.822;10.193;10.03;0.163
+Hout Bay West;27/4/2018;Apr;HBW8;cleared;10.462;9.669;9.348;0.321
+Hout Bay West;27/4/2018;Apr;HBW9;cleared;10.252;7.411;6.877;0.534
+Fish Hoek;28/3/2018;Mar ;FH1;non_cleared;10.561;8.319;8.245;0.074
+Fish Hoek;28/3/2018;Mar ;FH10;cleared;10.838;7.785;7.704;0.081
+Fish Hoek;28/3/2018;Mar ;FH2;non_cleared;10.925;8.498;6.44;2.058
+Fish Hoek;28/3/2018;Mar ;FH3;non_cleared;10.257;7.974;7.932;0.042
+Fish Hoek;28/3/2018;Mar ;FH4;non_cleared;10.449;7.238;6.657;0.581
+Fish Hoek;28/3/2018;Mar ;FH5;non_cleared;10.632;9.978;9.942;0.036
+Fish Hoek;28/3/2018;Mar ;FH6;cleared;10.765;9.076;8.313;0.763
+Fish Hoek;28/3/2018;Mar ;FH7;cleared;10.44;7.69;7.662;0.028
+Fish Hoek;28/3/2018;Mar ;FH8;cleared;10.658;8.259;7.896;0.363
+Fish Hoek;28/3/2018;Mar ;FH9;cleared;10.107;9.603;8.989;0.614
+Hout Bay East;28/3/2018;Mar ;HBE1;non_cleared;10.078;8.116;8.012;0.104
+Hout Bay East;28/3/2018;Mar ;HBE10;non_cleared;10.127;9.543;9.513;0.03
+Hout Bay East;28/3/2018;Mar ;HBE2;cleared;10.216;9.845;9.635;0.21
+Hout Bay East;28/3/2018;Mar ;HBE3;non_cleared;10.472;7.529;7.36;0.169
+Hout Bay East;28/3/2018;Mar ;HBE4;non_cleared;10.124;9.923;9.914;0.009
+Hout Bay East;28/3/2018;Mar ;HBE5;non_cleared;10.879;10.549;10.454;0.095
+Hout Bay East;28/3/2018;Mar ;HBE6;cleared;10.876;10.245;10.056;0.189
+Hout Bay East;28/3/2018;Mar ;HBE7;cleared;10.179;9.122;8.854;0.268
+Hout Bay East;28/3/2018;Mar ;HBE8;cleared;10.326;9.939;9.766;0.173
+Hout Bay East;28/3/2018;Mar ;HBE9;cleared;10.565;10.021;9.901;0.12
+Hout Bay West;28/3/2018;Mar ;HBW1;non_cleared;10.016;6.894;6.49;0.404
+Hout Bay West;28/3/2018;Mar ;HBW10;cleared;10.766;10.291;10.142;0.149
+Hout Bay West;28/3/2018;Mar ;HBW2;non_cleared;10.112;6.85;6.405;0.445
+Hout Bay West;28/3/2018;Mar ;HBW3;non_cleared;10.707;9.367;9.017;0.35
+Hout Bay West;28/3/2018;Mar ;HBW4;non_cleared;10.287;9.449;9.411;0.038
+Hout Bay West;28/3/2018;Mar ;HBW5;non_cleared;10.667;9.965;9.842;0.123
+Hout Bay West;28/3/2018;Mar ;HBW6;cleared;10.275;9.942;9.358;0.584
+Hout Bay West;28/3/2018;Mar ;HBW7;cleared;10.372;8.778;6.831;1.947
+Hout Bay West;28/3/2018;Mar ;HBW8;cleared;10.441;7.487;5.612;1.875
+Hout Bay West;28/3/2018;Mar ;HBW9;cleared;10.227;9.315;9.295;0.02
+Fish Hoek;30/3/2018;Mar ;FH1;non_cleared;10.187;8.847;8.739;0.108
+Fish Hoek;30/3/2018;Mar ;FH10;cleared;10.652;8.377;7.869;0.508
+Fish Hoek;30/3/2018;Mar ;FH2;non_cleared;10.788;10.234;10.1;0.134
+Fish Hoek;30/3/2018;Mar ;FH3;non_cleared;10.563;7.42;7.002;0.418
+Fish Hoek;30/3/2018;Mar ;FH4;non_cleared;10.627;8.228;8.036;0.192
+Fish Hoek;30/3/2018;Mar ;FH5;non_cleared;10.059;9.521;9.217;0.304
+Fish Hoek;30/3/2018;Mar ;FH6;cleared;10.681;7.234;6.999;0.235
+Fish Hoek;30/3/2018;Mar ;FH7;cleared;10.9;8.712;8.655;0.057
+Fish Hoek;30/3/2018;Mar ;FH8;cleared;10.137;6.862;6.658;0.204
+Fish Hoek;30/3/2018;Mar ;FH9;cleared;10.851;8.611;8.423;0.188
+Hout Bay East;30/3/2018;Mar ;HBE1;non_cleared;10.268;9.058;9.03;0.028
+Hout Bay East;30/3/2018;Mar ;HBE10;cleared;10.024;9.444;9.344;0.1
+Hout Bay East;30/3/2018;Mar ;HBE2;non_cleared;10.459;9.943;9.869;0.074
+Hout Bay East;30/3/2018;Mar ;HBE3;non_cleared;10.409;9.617;9.514;0.103
+Hout Bay East;30/3/2018;Mar ;HBE4;non_cleared;10.427;9.492;8.989;0.503
+Hout Bay East;30/3/2018;Mar ;HBE5;non_cleared;10.038;9.262;9.261;0.001
+Hout Bay East;30/3/2018;Mar ;HBE6;cleared;10.545;8.415;8.027;0.388
+Hout Bay East;30/3/2018;Mar ;HBE7;cleared;10.106;7.047;6.751;0.296
+Hout Bay East;30/3/2018;Mar ;HBE8;cleared;10.083;9.328;9.123;0.205
+Hout Bay East;30/3/2018;Mar ;HBE9;cleared;10.097;9.461;9.453;0.008
+Hout Bay West;30/3/2018;Mar ;HBW1;non_cleared;10.152;6.556;6.5;0.056
+Hout Bay West;30/3/2018;Mar ;HBW10;cleared;10.466;9.595;9.469;0.126
+Hout Bay West;30/3/2018;Mar ;HBW2;non_cleared;10.815;9.726;9.58;0.146
+Hout Bay West;30/3/2018;Mar ;HBW3;non_cleared;10.403;8.089;7.789;0.3
+Hout Bay West;30/3/2018;Mar ;HBW4;non_cleared;10.815;9.726;9.58;0.146
+Hout Bay West;30/3/2018;Mar ;HBW5;non_cleared;10.248;9.464;9.338;0.126
+Hout Bay West;30/3/2018;Mar ;HBW6;cleared;10.191;7.337;6.582;0.755
+Hout Bay West;30/3/2018;Mar ;HBW7;cleared;10.405;8.246;7.252;0.994
+Hout Bay West;30/3/2018;Mar ;HBW8;cleared;10.035;8.365;7.865;0.5
+Hout Bay West;30/3/2018;Mar ;HBW9;cleared;10.402;9.005;8.665;0.34
